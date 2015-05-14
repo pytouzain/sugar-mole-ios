@@ -44,5 +44,5 @@ DerivedData
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
 Pods/
-Spicer.xcworkspace/
+Sugar Mole.xcworkspace/
 ../.DS_Store
