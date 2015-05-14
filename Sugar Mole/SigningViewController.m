@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Pierre-Yves Touzain. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SigningViewController.h"
 
-@interface ViewController ()
+@interface SigningViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SigningViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

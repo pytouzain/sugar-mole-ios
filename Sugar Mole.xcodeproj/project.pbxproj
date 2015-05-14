@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
 		0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B81B04ED6C00A58227 /* AppDelegate.m */; };
-		0ED963BC1B04ED6C00A58227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* ViewController.m */; };
+		0ED963BC1B04ED6C00A58227 /* SigningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* SigningViewController.m */; };
 		0ED963BF1B04ED6C00A58227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963BD1B04ED6C00A58227 /* Main.storyboard */; };
 		0ED963C11B04ED6C00A58227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963C01B04ED6C00A58227 /* Images.xcassets */; };
 		0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963C21B04ED6C00A58227 /* LaunchScreen.xib */; };
 		0ED963D01B04ED6C00A58227 /* Sugar_MoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963CF1B04ED6C00A58227 /* Sugar_MoleTests.m */; };
+		0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963DA1B04FA2D00A58227 /* HomeViewController.m */; };
+		0ED963DE1B04FA7E00A58227 /* ScenariosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963DD1B04FA7E00A58227 /* ScenariosViewController.m */; };
+		0ED963E11B04FAA200A58227 /* NewScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */; };
+		0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E31B04FAB300A58227 /* ActionsViewController.m */; };
+		0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */; };
+		0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E91B04FAD500A58227 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +38,26 @@
 		0ED963B51B04ED6C00A58227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0ED963B71B04ED6C00A58227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0ED963B81B04ED6C00A58227 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0ED963BA1B04ED6C00A58227 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0ED963BB1B04ED6C00A58227 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0ED963BA1B04ED6C00A58227 /* SigningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SigningViewController.h; sourceTree = "<group>"; };
+		0ED963BB1B04ED6C00A58227 /* SigningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SigningViewController.m; sourceTree = "<group>"; };
 		0ED963BE1B04ED6C00A58227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0ED963C01B04ED6C00A58227 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0ED963C31B04ED6C00A58227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0ED963C91B04ED6C00A58227 /* Sugar MoleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sugar MoleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED963CE1B04ED6C00A58227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED963CF1B04ED6C00A58227 /* Sugar_MoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sugar_MoleTests.m; sourceTree = "<group>"; };
+		0ED963D91B04FA2D00A58227 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0ED963DA1B04FA2D00A58227 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0ED963DC1B04FA7E00A58227 /* ScenariosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenariosViewController.h; sourceTree = "<group>"; };
+		0ED963DD1B04FA7E00A58227 /* ScenariosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenariosViewController.m; sourceTree = "<group>"; };
+		0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScenarioViewController.h; sourceTree = "<group>"; };
+		0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScenarioViewController.m; sourceTree = "<group>"; };
+		0ED963E21B04FAB300A58227 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
+		0ED963E31B04FAB300A58227 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		0ED963E51B04FACD00A58227 /* CompatibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompatibilityViewController.h; sourceTree = "<group>"; };
+		0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompatibilityViewController.m; sourceTree = "<group>"; };
+		0ED963E81B04FAD500A58227 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		0ED963E91B04FAD500A58227 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +101,20 @@
 			children = (
 				0ED963B71B04ED6C00A58227 /* AppDelegate.h */,
 				0ED963B81B04ED6C00A58227 /* AppDelegate.m */,
-				0ED963BA1B04ED6C00A58227 /* ViewController.h */,
-				0ED963BB1B04ED6C00A58227 /* ViewController.m */,
+				0ED963BA1B04ED6C00A58227 /* SigningViewController.h */,
+				0ED963BB1B04ED6C00A58227 /* SigningViewController.m */,
+				0ED963D91B04FA2D00A58227 /* HomeViewController.h */,
+				0ED963DA1B04FA2D00A58227 /* HomeViewController.m */,
+				0ED963DC1B04FA7E00A58227 /* ScenariosViewController.h */,
+				0ED963DD1B04FA7E00A58227 /* ScenariosViewController.m */,
+				0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */,
+				0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */,
+				0ED963E21B04FAB300A58227 /* ActionsViewController.h */,
+				0ED963E31B04FAB300A58227 /* ActionsViewController.m */,
+				0ED963E51B04FACD00A58227 /* CompatibilityViewController.h */,
+				0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */,
+				0ED963E81B04FAD500A58227 /* SettingsViewController.h */,
+				0ED963E91B04FAD500A58227 /* SettingsViewController.m */,
 				0ED963BD1B04ED6C00A58227 /* Main.storyboard */,
 				0ED963C01B04ED6C00A58227 /* Images.xcassets */,
 				0ED963C21B04ED6C00A58227 /* LaunchScreen.xib */,
@@ -219,9 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ED963BC1B04ED6C00A58227 /* ViewController.m in Sources */,
+				0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */,
+				0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */,
+				0ED963BC1B04ED6C00A58227 /* SigningViewController.m in Sources */,
+				0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */,
 				0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */,
+				0ED963DE1B04FA7E00A58227 /* ScenariosViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,
+				0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */,
+				0ED963E11B04FAA200A58227 /* NewScenarioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +450,7 @@
 				0ED963D51B04ED6C00A58227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ED963D61B04ED6C00A58227 /* Build configuration list for PBXNativeTarget "Sugar MoleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +459,7 @@
 				0ED963D81B04ED6C00A58227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
