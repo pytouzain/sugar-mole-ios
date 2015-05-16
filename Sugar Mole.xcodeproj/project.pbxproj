@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
 		0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B81B04ED6C00A58227 /* AppDelegate.m */; };
-		0ED963BC1B04ED6C00A58227 /* SigningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* SigningViewController.m */; };
+		0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* RegisterViewController.m */; };
 		0ED963BF1B04ED6C00A58227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963BD1B04ED6C00A58227 /* Main.storyboard */; };
 		0ED963C11B04ED6C00A58227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963C01B04ED6C00A58227 /* Images.xcassets */; };
 		0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963C21B04ED6C00A58227 /* LaunchScreen.xib */; };
@@ -20,6 +20,7 @@
 		0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E31B04FAB300A58227 /* ActionsViewController.m */; };
 		0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */; };
 		0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E91B04FAD500A58227 /* SettingsViewController.m */; };
+		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,8 @@
 		0ED963B51B04ED6C00A58227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0ED963B71B04ED6C00A58227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0ED963B81B04ED6C00A58227 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0ED963BA1B04ED6C00A58227 /* SigningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SigningViewController.h; sourceTree = "<group>"; };
-		0ED963BB1B04ED6C00A58227 /* SigningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SigningViewController.m; sourceTree = "<group>"; };
+		0ED963BA1B04ED6C00A58227 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0ED963BB1B04ED6C00A58227 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0ED963BE1B04ED6C00A58227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0ED963C01B04ED6C00A58227 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0ED963C31B04ED6C00A58227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -58,6 +59,8 @@
 		0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompatibilityViewController.m; sourceTree = "<group>"; };
 		0ED963E81B04FAD500A58227 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		0ED963E91B04FAD500A58227 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0EDD097A1B0772D20009F193 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0EDD097B1B0772D20009F193 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +104,10 @@
 			children = (
 				0ED963B71B04ED6C00A58227 /* AppDelegate.h */,
 				0ED963B81B04ED6C00A58227 /* AppDelegate.m */,
-				0ED963BA1B04ED6C00A58227 /* SigningViewController.h */,
-				0ED963BB1B04ED6C00A58227 /* SigningViewController.m */,
+				0ED963BA1B04ED6C00A58227 /* RegisterViewController.h */,
+				0ED963BB1B04ED6C00A58227 /* RegisterViewController.m */,
+				0EDD097A1B0772D20009F193 /* LoginViewController.h */,
+				0EDD097B1B0772D20009F193 /* LoginViewController.m */,
 				0ED963D91B04FA2D00A58227 /* HomeViewController.h */,
 				0ED963DA1B04FA2D00A58227 /* HomeViewController.m */,
 				0ED963DC1B04FA7E00A58227 /* ScenariosViewController.h */,
@@ -251,8 +256,9 @@
 			files = (
 				0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */,
 				0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */,
-				0ED963BC1B04ED6C00A58227 /* SigningViewController.m in Sources */,
+				0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */,
 				0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */,
+				0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */,
 				0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */,
 				0ED963DE1B04FA7E00A58227 /* ScenariosViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,

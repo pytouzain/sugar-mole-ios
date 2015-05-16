@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SigningViewController : UIViewController
+@interface RegisterViewController : UIViewController
 
 
 @end
