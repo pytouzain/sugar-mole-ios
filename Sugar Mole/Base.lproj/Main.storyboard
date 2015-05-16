@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-1112" y="-372"/>
         </scene>
-        <!--Scenarios View Controller-->
+        <!--Scenarios-->
         <scene sceneID="ije-nP-0id">
             <objects>
                 <viewController id="Fav-NF-Otw" customClass="ScenariosViewController" sceneMemberID="viewController">
@@ -44,9 +44,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.90980392160000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YUy-00-5fn"/>
+                    <navigationItem key="navigationItem" title="Scenarios" id="YUy-00-5fn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piL-8V-b6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +59,7 @@
                     <view key="view" contentMode="scaleToFill" id="Iiu-K0-fLx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.90980392160000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="qAC-FL-zFk"/>
                 </viewController>
@@ -67,31 +67,31 @@
             </objects>
             <point key="canvasLocation" x="-431" y="1413"/>
         </scene>
-        <!--Compatibility View Controller-->
+        <!--Compatibilite-->
         <scene sceneID="Eu4-xI-E5f">
             <objects>
                 <viewController id="pq9-tg-bng" customClass="CompatibilityViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HfY-a9-axl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.90980392160000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DPz-Ed-5Jv"/>
+                    <navigationItem key="navigationItem" title="Compatibilite" id="DPz-Ed-5Jv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6f7-mw-Fh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="707"/>
         </scene>
-        <!--Actions View Controller-->
+        <!--Actions-->
         <scene sceneID="yXt-aj-GcD">
             <objects>
                 <viewController id="QJl-mT-yWo" customClass="ActionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aDK-1z-Wc7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.90980392160000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Vok-O2-vZH"/>
+                    <navigationItem key="navigationItem" title="Actions" id="Vok-O2-vZH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zba-a6-o3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,22 +378,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pvh-Fo-ic7"/>
-                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sY-gE-95T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="251" y="-35"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Parametres-->
         <scene sceneID="FF9-jn-4L2">
             <objects>
                 <viewController id="mCs-n5-1hp" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bmK-dQ-cqu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.90980392160000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="40f-3S-ocw"/>
+                    <navigationItem key="navigationItem" title="Parametres" id="40f-3S-ocw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbg-eD-yxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
