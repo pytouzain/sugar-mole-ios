@@ -21,6 +21,7 @@
 		0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */; };
 		0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E91B04FAD500A58227 /* SettingsViewController.m */; };
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
+		0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6C2AB1B08E0960005914E /* Default-h568.png */; };
 		DB872725DFFB92D648073F96 /* libPods-Sugar Mole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		0ED963E91B04FAD500A58227 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		0EDD097A1B0772D20009F193 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0EDD097B1B0772D20009F193 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0EE6C2AB1B08E0960005914E /* Default-h568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-h568.png"; sourceTree = SOURCE_ROOT; };
 		6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sugar Mole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F260B22C22131A98F48FB11 /* Pods-Sugar Mole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CAEB12640E1997A85015A5 /* Pods-Sugar Mole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		0ED963B31B04ED6C00A58227 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0EE6C2AB1B08E0960005914E /* Default-h568.png */,
 				0ED963B41B04ED6C00A58227 /* Info.plist */,
 				0ED963B51B04ED6C00A58227 /* main.m */,
 			);
@@ -229,6 +232,7 @@
 				TargetAttributes = {
 					0ED963AF1B04ED6C00A58227 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2QBUE49SMK;
 					};
 					0ED963C81B04ED6C00A58227 = {
 						CreatedOnToolsVersion = 6.2;
@@ -260,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */,
 				0ED963BF1B04ED6C00A58227 /* Main.storyboard in Resources */,
 				0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */,
 				0ED963C11B04ED6C00A58227 /* Images.xcassets in Resources */,
@@ -447,9 +452,14 @@
 			baseConfigurationReference = 8F260B22C22131A98F48FB11 /* Pods-Sugar Mole.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sugar Mole/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -458,9 +468,14 @@
 			baseConfigurationReference = F3CAEB12640E1997A85015A5 /* Pods-Sugar Mole.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sugar Mole/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
