@@ -22,6 +22,7 @@
 		0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E91B04FAD500A58227 /* SettingsViewController.m */; };
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
 		0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */; };
+		0EDD51061B0D3FD300E18B42 /* HomeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51051B0D3FD300E18B42 /* HomeAnimator.m */; };
 		0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6C2AB1B08E0960005914E /* Default-h568.png */; };
 		DB872725DFFB92D648073F96 /* libPods-Sugar Mole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		0EDD097B1B0772D20009F193 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0EDD51001B0D3A1D00E18B42 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		0EDD51041B0D3FD300E18B42 /* HomeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAnimator.h; sourceTree = "<group>"; };
+		0EDD51051B0D3FD300E18B42 /* HomeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeAnimator.m; sourceTree = "<group>"; };
 		0EE6C2AB1B08E0960005914E /* Default-h568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-h568.png"; sourceTree = SOURCE_ROOT; };
 		6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sugar Mole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F260B22C22131A98F48FB11 /* Pods-Sugar Mole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,10 +174,20 @@
 				0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */,
 				0ED963E81B04FAD500A58227 /* SettingsViewController.h */,
 				0ED963E91B04FAD500A58227 /* SettingsViewController.m */,
-				0EDD51001B0D3A1D00E18B42 /* NavigationControllerDelegate.h */,
-				0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */,
+				0EDD51031B0D3F5200E18B42 /* Navigation */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0EDD51031B0D3F5200E18B42 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0EDD51001B0D3A1D00E18B42 /* NavigationControllerDelegate.h */,
+				0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */,
+				0EDD51041B0D3FD300E18B42 /* HomeAnimator.h */,
+				0EDD51051B0D3FD300E18B42 /* HomeAnimator.m */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 		4118444EED13B0334382386F /* Frameworks */ = {
@@ -332,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */,
+				0EDD51061B0D3FD300E18B42 /* HomeAnimator.m in Sources */,
 				0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */,
 				0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */,
 				0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */,

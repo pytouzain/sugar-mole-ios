@@ -323,6 +323,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTouched:" destination="DHT-oL-Ouu" eventType="touchUpInside" id="ebh-Rx-0Wv"/>
                                     <segue destination="Fav-NF-Otw" kind="push" id="ruR-sn-s7I"/>
                                 </connections>
                             </button>
@@ -337,6 +338,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTouched:" destination="DHT-oL-Ouu" eventType="touchUpInside" id="Eeb-SZ-hZm"/>
                                     <segue destination="QJl-mT-yWo" kind="push" id="FvY-7v-YYQ"/>
                                 </connections>
                             </button>
@@ -351,6 +353,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTouched:" destination="DHT-oL-Ouu" eventType="touchUpInside" id="jXH-m3-EWJ"/>
                                     <segue destination="pq9-tg-bng" kind="push" id="6kn-kb-RIL"/>
                                 </connections>
                             </button>
@@ -365,6 +368,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTouched:" destination="DHT-oL-Ouu" eventType="touchUpInside" id="Eqe-JJ-zYP"/>
                                     <segue destination="mCs-n5-1hp" kind="push" id="bCh-Na-XrS"/>
                                 </connections>
                             </button>
@@ -405,6 +409,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pvh-Fo-ic7"/>
+                    <connections>
+                        <outlet property="actionsButton" destination="JpC-kG-1ma" id="mhU-0P-07B"/>
+                        <outlet property="compatibilityButton" destination="xa2-si-LGT" id="6ZE-8b-Uef"/>
+                        <outlet property="decorationView" destination="Z7j-PF-xn9" id="vKf-0q-yVr"/>
+                        <outlet property="myScenariosButton" destination="HeH-Ff-dJ6" id="zvN-s3-pYj"/>
+                        <outlet property="settingsButton" destination="11p-Vr-8Nu" id="F5D-tD-t44"/>
+                        <outlet property="vocalControlButton" destination="e9b-Xf-ybs" id="ff7-yh-0P2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sY-gE-95T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

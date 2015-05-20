@@ -7,20 +7,29 @@
 //
 
 #import "NavigationControllerDelegate.h"
+#import "HomeAnimator.h"
+
+#import "HomeViewController.h"
 
 @interface NavigationControllerDelegate ()
 
 @property (nonatomic, weak) IBOutlet UINavigationController *navigationController;
+@property (nonatomic, strong) HomeAnimator *homeAnimator;
 
 @end
 
 @implementation NavigationControllerDelegate
 
 - (void)awakeFromNib {
-    
+    self.homeAnimator = [HomeAnimator new];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+    
+    if ([fromVC isKindOfClass:[HomeViewController class]] && operation == UINavigationControllerOperationPush) {
+        return self.homeAnimator;
+    }
+    
     return nil;
 }
 

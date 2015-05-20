@@ -24,6 +24,13 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (IBAction)buttonTouched:(id)sender {
+    _touchedButton = (UIButton *)sender;
+}
+
+
+#pragma mark - Temporary method
+
 - (IBAction)backToConnexion:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
