@@ -24,4 +24,9 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (IBAction)backToConnexion:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 @end
