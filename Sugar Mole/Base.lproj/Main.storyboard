@@ -19,10 +19,16 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
+                        <outlet property="delegate" destination="zUV-Us-hUl" id="7ja-4X-mIy"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hfT-Ob-y6t"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vd-Jj-Yqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="zUV-Us-hUl" customClass="NavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="6no-le-Iff" id="CoM-tp-w3x"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-1112" y="-372"/>
         </scene>
@@ -391,6 +397,9 @@
                                 <state key="normal" image="Electrical Sensor-100">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="backToConnexion:" destination="DHT-oL-Ouu" eventType="touchUpInside" id="lfz-Dp-NNL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
