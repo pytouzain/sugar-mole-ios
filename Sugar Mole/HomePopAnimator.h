@@ -1,5 +1,5 @@
 //
-//  HomeAnimator.h
+//  HomePopAnimator.h
 //  Sugar Mole
 //
 //  Created by Pierre-Yves Touzain on 21/05/2015.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface HomeAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface HomePopAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end

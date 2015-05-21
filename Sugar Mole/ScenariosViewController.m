@@ -24,4 +24,8 @@
    // self.navigationController.navigationBarHidden = NO;
 }
 
+- (IBAction)backToHomeView:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

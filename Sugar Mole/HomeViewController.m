@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.initialFrames = [[NSArray alloc] initWithObjects:[NSValue valueWithCGRect:_decorationView.frame],
+                                                            [NSValue valueWithCGRect:_myScenariosButton.frame],
+                                                            [NSValue valueWithCGRect:_actionsButton.frame],
+                                                            [NSValue valueWithCGRect:_compatibilityButton.frame],
+                                                            [NSValue valueWithCGRect:_settingsButton.frame],
+                                                            [NSValue valueWithCGRect:_vocalControlButton.frame],
+                                                            nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic) UIButton *touchedButton;
 
+@property (strong, nonatomic) NSArray *initialFrames;
+
 @end
