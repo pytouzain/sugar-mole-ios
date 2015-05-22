@@ -24,6 +24,9 @@
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
 		0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */; };
 		0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */; };
+		0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */; };
+		0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D91B0FF17900EDA06F /* DataManager.m */; };
+		0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */; };
 		0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6C2AB1B08E0960005914E /* Default-h568.png */; };
 		DB872725DFFB92D648073F96 /* libPods-Sugar Mole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,12 @@
 		0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		0EDD51041B0D3FD300E18B42 /* HomePushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePushAnimator.h; sourceTree = "<group>"; };
 		0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePushAnimator.m; sourceTree = "<group>"; };
+		0EE320D51B0FE19B00EDA06F /* HTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestManager.h; sourceTree = "<group>"; };
+		0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestManager.m; sourceTree = "<group>"; };
+		0EE320D81B0FF17900EDA06F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		0EE320D91B0FF17900EDA06F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		0EE320DB1B0FF18B00EDA06F /* RequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHandler.h; sourceTree = "<group>"; };
+		0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHandler.m; sourceTree = "<group>"; };
 		0EE6C2AB1B08E0960005914E /* Default-h568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-h568.png"; sourceTree = SOURCE_ROOT; };
 		6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sugar Mole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F260B22C22131A98F48FB11 /* Pods-Sugar Mole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +132,8 @@
 				0ED963B71B04ED6C00A58227 /* AppDelegate.h */,
 				0ED963B81B04ED6C00A58227 /* AppDelegate.m */,
 				0EDD50FF1B0D380800E18B42 /* Controllers */,
+				0EE320D31B0FE0C000EDA06F /* Model */,
+				0EE320D41B0FE0D100EDA06F /* Services */,
 				0ED963BD1B04ED6C00A58227 /* Main.storyboard */,
 				0ED963C01B04ED6C00A58227 /* Images.xcassets */,
 				0ED963C21B04ED6C00A58227 /* LaunchScreen.xib */,
@@ -193,6 +204,26 @@
 				0EDCB9561B0E8C6B00D05127 /* HomePopAnimator.m */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		0EE320D31B0FE0C000EDA06F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0EE320D41B0FE0D100EDA06F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EE320D51B0FE19B00EDA06F /* HTTPRequestManager.h */,
+				0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */,
+				0EE320D81B0FF17900EDA06F /* DataManager.h */,
+				0EE320D91B0FF17900EDA06F /* DataManager.m */,
+				0EE320DB1B0FF18B00EDA06F /* RequestHandler.h */,
+				0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		4118444EED13B0334382386F /* Frameworks */ = {
@@ -350,6 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */,
+				0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */,
+				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
 				0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */,
 				0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */,
 				0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */,
@@ -360,6 +393,7 @@
 				0EDCB9571B0E8C6B00D05127 /* HomePopAnimator.m in Sources */,
 				0ED963DE1B04FA7E00A58227 /* ScenariosViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,
+				0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */,
 				0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */,
 				0ED963E11B04FAA200A58227 /* NewScenarioViewController.m in Sources */,
 			);
