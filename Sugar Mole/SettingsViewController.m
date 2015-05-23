@@ -24,6 +24,10 @@
     //self.navigationController.navigationBarHidden = NO;
 }
 
+- (IBAction)signOut:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (IBAction)backToHome:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
