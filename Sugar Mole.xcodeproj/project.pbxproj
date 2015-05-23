@@ -15,10 +15,7 @@
 		0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963C21B04ED6C00A58227 /* LaunchScreen.xib */; };
 		0ED963D01B04ED6C00A58227 /* Sugar_MoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963CF1B04ED6C00A58227 /* Sugar_MoleTests.m */; };
 		0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963DA1B04FA2D00A58227 /* HomeViewController.m */; };
-		0ED963DE1B04FA7E00A58227 /* ScenariosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963DD1B04FA7E00A58227 /* ScenariosViewController.m */; };
 		0ED963E11B04FAA200A58227 /* NewScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */; };
-		0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E31B04FAB300A58227 /* ActionsViewController.m */; };
-		0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */; };
 		0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E91B04FAD500A58227 /* SettingsViewController.m */; };
 		0EDCB9571B0E8C6B00D05127 /* HomePopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCB9561B0E8C6B00D05127 /* HomePopAnimator.m */; };
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
@@ -76,14 +73,8 @@
 		0ED963CF1B04ED6C00A58227 /* Sugar_MoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sugar_MoleTests.m; sourceTree = "<group>"; };
 		0ED963D91B04FA2D00A58227 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		0ED963DA1B04FA2D00A58227 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		0ED963DC1B04FA7E00A58227 /* ScenariosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenariosViewController.h; sourceTree = "<group>"; };
-		0ED963DD1B04FA7E00A58227 /* ScenariosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenariosViewController.m; sourceTree = "<group>"; };
 		0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScenarioViewController.h; sourceTree = "<group>"; };
 		0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScenarioViewController.m; sourceTree = "<group>"; };
-		0ED963E21B04FAB300A58227 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
-		0ED963E31B04FAB300A58227 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
-		0ED963E51B04FACD00A58227 /* CompatibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompatibilityViewController.h; sourceTree = "<group>"; };
-		0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompatibilityViewController.m; sourceTree = "<group>"; };
 		0ED963E81B04FAD500A58227 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		0ED963E91B04FAD500A58227 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		0EDCB9551B0E8C6B00D05127 /* HomePopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePopAnimator.h; sourceTree = "<group>"; };
@@ -235,14 +226,8 @@
 				0EDD097B1B0772D20009F193 /* LoginViewController.m */,
 				0ED963D91B04FA2D00A58227 /* HomeViewController.h */,
 				0ED963DA1B04FA2D00A58227 /* HomeViewController.m */,
-				0ED963DC1B04FA7E00A58227 /* ScenariosViewController.h */,
-				0ED963DD1B04FA7E00A58227 /* ScenariosViewController.m */,
 				0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */,
 				0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */,
-				0ED963E21B04FAB300A58227 /* ActionsViewController.h */,
-				0ED963E31B04FAB300A58227 /* ActionsViewController.m */,
-				0ED963E51B04FACD00A58227 /* CompatibilityViewController.h */,
-				0ED963E61B04FACD00A58227 /* CompatibilityViewController.m */,
 				0ED963E81B04FAD500A58227 /* SettingsViewController.h */,
 				0ED963E91B04FAD500A58227 /* SettingsViewController.m */,
 				0EE320E71B0FF54300EDA06F /* Tableviews */,
@@ -520,8 +505,6 @@
 				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
 				0EE320F71B0FF6A900EDA06F /* BaseItemCell.m in Sources */,
 				0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */,
-				0ED963E41B04FAB300A58227 /* ActionsViewController.m in Sources */,
-				0ED963E71B04FACD00A58227 /* CompatibilityViewController.m in Sources */,
 				0EE320EA1B0FF58600EDA06F /* ItemsTableViewController.m in Sources */,
 				0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */,
 				0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */,
@@ -531,7 +514,6 @@
 				0EDCB9571B0E8C6B00D05127 /* HomePopAnimator.m in Sources */,
 				0EE320ED1B0FF5E900EDA06F /* ScenariosTableViewController.m in Sources */,
 				0EE320E01B0FF4ED00EDA06F /* Scenario.m in Sources */,
-				0ED963DE1B04FA7E00A58227 /* ScenariosViewController.m in Sources */,
 				0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */,
 				0EE320F01B0FF5F800EDA06F /* ActionsTableViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,

@@ -19,9 +19,8 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)backToHomeView:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
