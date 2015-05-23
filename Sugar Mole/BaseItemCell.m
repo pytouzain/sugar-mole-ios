@@ -27,7 +27,6 @@
     frame.origin.x = 20;
     frame.size.width -= 40;
     self.contentView.frame = frame;
-    [self.contentView setBackgroundColor:[UIColor greenColor]];
 }
 
 @end

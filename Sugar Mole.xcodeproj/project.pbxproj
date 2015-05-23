@@ -21,6 +21,7 @@
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
 		0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */; };
 		0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */; };
+		0EDFB6A81B10D23C0003FFE6 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */; };
 		0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */; };
 		0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D91B0FF17900EDA06F /* DataManager.m */; };
 		0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */; };
@@ -29,7 +30,7 @@
 		0EE320E61B0FF50800EDA06F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320E51B0FF50800EDA06F /* User.m */; };
 		0EE320EA1B0FF58600EDA06F /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320E91B0FF58600EDA06F /* ItemsTableViewController.m */; };
 		0EE320ED1B0FF5E900EDA06F /* ScenariosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320EC1B0FF5E900EDA06F /* ScenariosTableViewController.m */; };
-		0EE320F01B0FF5F800EDA06F /* ActionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320EF1B0FF5F800EDA06F /* ActionsTableViewController.m */; };
+		0EE320F01B0FF5F800EDA06F /* ActionsTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320EF1B0FF5F800EDA06F /* ActionsTypeTableViewController.m */; };
 		0EE320F31B0FF62900EDA06F /* CompatibilitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320F21B0FF62900EDA06F /* CompatibilitiesTableViewController.m */; };
 		0EE320F71B0FF6A900EDA06F /* BaseItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320F61B0FF6A900EDA06F /* BaseItemCell.m */; };
 		0EE320FA1B0FF6C900EDA06F /* ActionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320F91B0FF6C900EDA06F /* ActionItemCell.m */; };
@@ -85,6 +86,8 @@
 		0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		0EDD51041B0D3FD300E18B42 /* HomePushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePushAnimator.h; sourceTree = "<group>"; };
 		0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePushAnimator.m; sourceTree = "<group>"; };
+		0EDFB6A61B10D23C0003FFE6 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
+		0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
 		0EE320D51B0FE19B00EDA06F /* HTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestManager.h; sourceTree = "<group>"; };
 		0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestManager.m; sourceTree = "<group>"; };
 		0EE320D81B0FF17900EDA06F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -101,8 +104,8 @@
 		0EE320E91B0FF58600EDA06F /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
 		0EE320EB1B0FF5E900EDA06F /* ScenariosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenariosTableViewController.h; sourceTree = "<group>"; };
 		0EE320EC1B0FF5E900EDA06F /* ScenariosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenariosTableViewController.m; sourceTree = "<group>"; };
-		0EE320EE1B0FF5F800EDA06F /* ActionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsTableViewController.h; sourceTree = "<group>"; };
-		0EE320EF1B0FF5F800EDA06F /* ActionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsTableViewController.m; sourceTree = "<group>"; };
+		0EE320EE1B0FF5F800EDA06F /* ActionsTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsTypeTableViewController.h; sourceTree = "<group>"; };
+		0EE320EF1B0FF5F800EDA06F /* ActionsTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsTypeTableViewController.m; sourceTree = "<group>"; };
 		0EE320F11B0FF62900EDA06F /* CompatibilitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompatibilitiesTableViewController.h; sourceTree = "<group>"; };
 		0EE320F21B0FF62900EDA06F /* CompatibilitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompatibilitiesTableViewController.m; sourceTree = "<group>"; };
 		0EE320F51B0FF6A900EDA06F /* BaseItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseItemCell.h; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 				0EDD097B1B0772D20009F193 /* LoginViewController.m */,
 				0ED963D91B04FA2D00A58227 /* HomeViewController.h */,
 				0ED963DA1B04FA2D00A58227 /* HomeViewController.m */,
+				0EDFB6A61B10D23C0003FFE6 /* ActionsViewController.h */,
+				0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */,
 				0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */,
 				0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */,
 				0ED963E81B04FAD500A58227 /* SettingsViewController.h */,
@@ -283,8 +288,8 @@
 				0EE320E91B0FF58600EDA06F /* ItemsTableViewController.m */,
 				0EE320EB1B0FF5E900EDA06F /* ScenariosTableViewController.h */,
 				0EE320EC1B0FF5E900EDA06F /* ScenariosTableViewController.m */,
-				0EE320EE1B0FF5F800EDA06F /* ActionsTableViewController.h */,
-				0EE320EF1B0FF5F800EDA06F /* ActionsTableViewController.m */,
+				0EE320EE1B0FF5F800EDA06F /* ActionsTypeTableViewController.h */,
+				0EE320EF1B0FF5F800EDA06F /* ActionsTypeTableViewController.m */,
 				0EE320F11B0FF62900EDA06F /* CompatibilitiesTableViewController.h */,
 				0EE320F21B0FF62900EDA06F /* CompatibilitiesTableViewController.m */,
 			);
@@ -505,6 +510,7 @@
 				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
 				0EE320F71B0FF6A900EDA06F /* BaseItemCell.m in Sources */,
 				0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */,
+				0EDFB6A81B10D23C0003FFE6 /* ActionsViewController.m in Sources */,
 				0EE320EA1B0FF58600EDA06F /* ItemsTableViewController.m in Sources */,
 				0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */,
 				0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */,
@@ -515,7 +521,7 @@
 				0EE320ED1B0FF5E900EDA06F /* ScenariosTableViewController.m in Sources */,
 				0EE320E01B0FF4ED00EDA06F /* Scenario.m in Sources */,
 				0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */,
-				0EE320F01B0FF5F800EDA06F /* ActionsTableViewController.m in Sources */,
+				0EE320F01B0FF5F800EDA06F /* ActionsTypeTableViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,
 				0EE3210F1B0FF84400EDA06F /* HeaterItemCell.m in Sources */,
 				0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */,

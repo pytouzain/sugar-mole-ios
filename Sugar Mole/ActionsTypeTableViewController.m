@@ -6,21 +6,28 @@
 //  Copyright (c) 2015 Pierre-Yves Touzain. All rights reserved.
 //
 
-#import "ActionsTableViewController.h"
+#import "ActionsTypeTableViewController.h"
+#import "ActionItemCell.h"
 
-@interface ActionsTableViewController ()
+@interface ActionsTypeTableViewController ()
 
 @end
 
-@implementation ActionsTableViewController
+@implementation ActionsTypeTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)backToHome:(id)sender {
+- (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ActionItemCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
+    
+    return cell;
 }
 
 /*
