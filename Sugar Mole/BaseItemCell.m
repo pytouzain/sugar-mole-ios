@@ -24,8 +24,8 @@
 {
     [super layoutSubviews];
     CGRect frame = self.contentView.frame;
-    frame.origin.x = 20;
-    frame.size.width -= 40;
+    frame.origin.x = 16;
+    frame.size.width -= 32;
     self.contentView.frame = frame;
 }
 
