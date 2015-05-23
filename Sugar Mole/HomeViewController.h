@@ -10,7 +10,7 @@
 
 @interface HomeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIView *decorationView;
+@property (weak, nonatomic) IBOutlet UIImageView *decorationView;
 @property (weak, nonatomic) IBOutlet UIButton *myScenariosButton;
 @property (weak, nonatomic) IBOutlet UIButton *actionsButton;
 @property (weak, nonatomic) IBOutlet UIButton *compatibilityButton;
