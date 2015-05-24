@@ -22,6 +22,7 @@
 		0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */; };
 		0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */; };
 		0EDFB6A81B10D23C0003FFE6 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */; };
+		0EE303FD1B114D9600D0659F /* VocalControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE303FC1B114D9600D0659F /* VocalControlViewController.m */; };
 		0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */; };
 		0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D91B0FF17900EDA06F /* DataManager.m */; };
 		0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */; };
@@ -88,6 +89,8 @@
 		0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePushAnimator.m; sourceTree = "<group>"; };
 		0EDFB6A61B10D23C0003FFE6 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
 		0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		0EE303FB1B114D9600D0659F /* VocalControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocalControlViewController.h; sourceTree = "<group>"; };
+		0EE303FC1B114D9600D0659F /* VocalControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocalControlViewController.m; sourceTree = "<group>"; };
 		0EE320D51B0FE19B00EDA06F /* HTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestManager.h; sourceTree = "<group>"; };
 		0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestManager.m; sourceTree = "<group>"; };
 		0EE320D81B0FF17900EDA06F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */,
 				0ED963E81B04FAD500A58227 /* SettingsViewController.h */,
 				0ED963E91B04FAD500A58227 /* SettingsViewController.m */,
+				0EE303FB1B114D9600D0659F /* VocalControlViewController.h */,
+				0EE303FC1B114D9600D0659F /* VocalControlViewController.m */,
 				0EE320E71B0FF54300EDA06F /* Tableviews */,
 				0EDD51031B0D3F5200E18B42 /* Navigation */,
 			);
@@ -527,6 +532,7 @@
 				0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */,
 				0EE320FA1B0FF6C900EDA06F /* ActionItemCell.m in Sources */,
 				0EE321061B0FF7FD00EDA06F /* PlugItemCell.m in Sources */,
+				0EE303FD1B114D9600D0659F /* VocalControlViewController.m in Sources */,
 				0EE321031B0FF73600EDA06F /* LightItemCell.m in Sources */,
 				0EE320E61B0FF50800EDA06F /* User.m in Sources */,
 				0EE3210C1B0FF82D00EDA06F /* SecurityItemCell.m in Sources */,
