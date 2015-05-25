@@ -15,4 +15,6 @@
 
 + (instancetype)sharedHandler;
 
+- (void)signUpWithEmail:(NSString *)email password:(NSString *)password;
+
 @end

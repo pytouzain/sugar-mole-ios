@@ -38,4 +38,31 @@ static RequestHandler *requestHandler = nil;
     return self;
 }
 
+- (void)signUpWithEmail:(NSString *)email password:(NSString *)password
+{
+    [_httpRequestManager signUp:@{@"username" : email, @"password" : password}];
+}
+
+#pragma HTTPRequestManagerDelegate Methods
+
+- (void)signInDidSucceed:(NSDictionary *)response
+{
+    
+}
+
+- (void)signInDidFail:(NSError *)error
+{
+    
+}
+
+- (void)signUpDidSucceed:(NSDictionary *)response
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidSucceed" object:nil];
+}
+
+- (void)signUpDidFail:(NSError *)error
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidFail" object:nil]; 
+}
+
 @end

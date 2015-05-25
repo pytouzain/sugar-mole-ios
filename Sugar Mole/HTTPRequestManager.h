@@ -10,11 +10,20 @@
 
 @protocol HTTPRequestManagerDelegate <NSObject>
 
+- (void)signInDidSucceed:(NSDictionary *)response;
+- (void)signInDidFail:(NSError *)error;
+
+- (void)signUpDidSucceed:(NSDictionary *)response;
+- (void)signUpDidFail:(NSError *)error;
+
 @end
 
 @interface HTTPRequestManager : NSObject
 
 @property (nonatomic, weak) id<HTTPRequestManagerDelegate> delegate;
+
+- (void)signIn:(NSDictionary *)parameters;
+- (void)signUp:(NSDictionary *)parameters;
 
 @end
 
