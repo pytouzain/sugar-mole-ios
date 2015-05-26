@@ -17,6 +17,7 @@
 - (void)signUpDidFail:(NSNumber *)errorCode;
 
 - (void)getHousesSucceed:(NSDictionary *)response;
+- (void)getHouseSucceed:(NSDictionary *)response;
 
 @end
 
@@ -28,6 +29,7 @@
 - (void)signUp:(NSDictionary *)parameters;
 
 - (void)getHouses:(NSString *)token;
+- (void)getHouse:(NSString *)uuid token:(NSString *)token;
 
 @end
 

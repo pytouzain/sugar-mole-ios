@@ -108,4 +108,9 @@ static RequestHandler *requestHandler = nil;
     
 }
 
+- (void)getHouseSucceed:(NSDictionary *)response
+{
+    
+}
+
 @end
