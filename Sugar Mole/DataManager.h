@@ -10,4 +10,8 @@
 
 @interface DataManager : NSObject
 
+@property (nonatomic, readonly) NSString *token;
+
+- (void)authentificationSucceed:(NSString *)token;
+
 @end

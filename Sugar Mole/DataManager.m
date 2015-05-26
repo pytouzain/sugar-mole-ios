@@ -8,6 +8,17 @@
 
 #import "DataManager.h"
 
+@interface DataManager ()
+
+@property (nonatomic, strong) NSString *token;
+
+@end
+
 @implementation DataManager
+
+- (void)authentificationSucceed:(NSString *)token
+{
+    _token = token;
+}
 
 @end

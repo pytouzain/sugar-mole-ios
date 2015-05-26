@@ -14,7 +14,7 @@
 - (void)signInDidFail:(NSError *)error;
 
 - (void)signUpDidSucceed:(NSDictionary *)response;
-- (void)signUpDidFail:(NSError *)error;
+- (void)signUpDidFail:(NSNumber *)errorCode;
 
 @end
 

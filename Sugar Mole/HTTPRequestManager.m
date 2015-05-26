@@ -38,9 +38,6 @@
         if (_delegate && [_delegate respondsToSelector:@selector(signInDidFail:)]) {
             [_delegate signInDidFail:error];
         }
-        
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Authentification Error" message:error.description delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//        [alert show];
     }];
 }
 
@@ -50,25 +47,19 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     [manager POST:[NSString stringWithFormat:@"%@/%@/", API_BASE_URL, @"user"] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        //NSString *response = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
         NSLog(@"Sign up uccess : %@", response);
         
         if (_delegate && [_delegate respondsToSelector:@selector(signInDidSucceed:)]) {
             [_delegate signUpDidSucceed:response];
         }
-        //[[NSNotificationCenter defaultCenter] postNotificationName:@"signUpSuccess" object:nil];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Sign up Error : %@", error);
         
-        NSLog(@"response = %@", operation.response);
-        
         if (_delegate && [_delegate respondsToSelector:@selector(signInDidFail:)]) {
-            [_delegate signUpDidFail:error];
+            [_delegate signUpDidFail:[NSNumber numberWithInteger:[operation.response statusCode]]];
         }
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Register Error" message:error.description delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//        [alert show];
     }];
 }
 

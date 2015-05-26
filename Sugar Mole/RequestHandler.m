@@ -57,12 +57,24 @@ static RequestHandler *requestHandler = nil;
 
 - (void)signUpDidSucceed:(NSDictionary *)response
 {
+    [_dataManager authentificationSucceed:[response objectForKey:@"token"]];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidSucceed" object:nil];
 }
 
-- (void)signUpDidFail:(NSError *)error
+- (void)signUpDidFail:(NSNumber *)errorCode
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidFail" object:nil]; 
+    NSString *errorString;
+    
+    switch ([errorCode integerValue]) {
+        case 400:
+            errorString = @"An error occured, please retry";
+            break;
+            
+        default:
+            errorString = @"Unexpected error";
+            break;
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidFail" object:errorString];
 }
 
 @end
