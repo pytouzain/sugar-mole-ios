@@ -16,6 +16,8 @@
 - (void)signUpDidSucceed:(NSDictionary *)response;
 - (void)signUpDidFail:(NSNumber *)errorCode;
 
+- (void)getHousesSucceed:(NSDictionary *)response;
+
 @end
 
 @interface HTTPRequestManager : NSObject
@@ -24,6 +26,8 @@
 
 - (void)signIn:(NSDictionary *)parameters;
 - (void)signUp:(NSDictionary *)parameters;
+
+- (void)getHouses:(NSString *)token;
 
 @end
 

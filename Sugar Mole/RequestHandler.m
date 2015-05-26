@@ -103,4 +103,9 @@ static RequestHandler *requestHandler = nil;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidFail" object:errorString];
 }
 
+- (void)getHousesSucceed:(NSDictionary *)response
+{
+    
+}
+
 @end

@@ -58,6 +58,29 @@
     }];
 }
 
+#pragma mark House
+
+- (void)getHouses:(NSString *)token
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Token %@", token] forHTTPHeaderField:@"Authorization"];
+    
+    [manager GET:[NSString stringWithFormat:@"%@/%@/", API_BASE_URL, @"house"] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+        NSLog(@"Get Houses Success : %@", response);
+        
+        if (_delegate && [_delegate respondsToSelector:@selector(getHousesSucceed:)]) {
+            [_delegate getHousesSucceed:response];
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Get Houses Error : %@", error);
+        
+    }];
+}
+
 
 
 @end
