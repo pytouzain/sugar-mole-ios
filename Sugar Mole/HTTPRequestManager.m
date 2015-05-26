@@ -27,16 +27,11 @@
         if (_delegate && [_delegate respondsToSelector:@selector(signInDidSucceed:)]) {
             [_delegate signInDidSucceed:response];
         }
-        
-//        NSMutableDictionary *persistentsDatas = [[NSMutableDictionary alloc] initWithDictionary:parameters];
-//        [persistentsDatas addEntriesFromDictionary:response];
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"signInSuccess" object:persistentsDatas];
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Sign in Error : %@", error);
         
         if (_delegate && [_delegate respondsToSelector:@selector(signInDidFail:)]) {
-            [_delegate signInDidFail:error];
+            [_delegate signInDidFail:[NSNumber numberWithInteger:[operation.response statusCode]]];
         }
     }];
 }

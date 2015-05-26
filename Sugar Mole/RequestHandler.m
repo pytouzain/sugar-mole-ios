@@ -39,6 +39,11 @@ static RequestHandler *requestHandler = nil;
     return self;
 }
 
+- (void)signInWithEmail:(NSString *)email password:(NSString *)password
+{
+    [_httpRequestManager signIn:@{@"username" : email, @"password" : [password md5]}];
+}
+
 - (void)signUpWithEmail:(NSString *)email password:(NSString *)password
 {
     [_httpRequestManager signUp:@{@"username" : email, @"password" : [password md5]}];
@@ -48,12 +53,27 @@ static RequestHandler *requestHandler = nil;
 
 - (void)signInDidSucceed:(NSDictionary *)response
 {
-    
+    [_dataManager authentificationSucceed:[response objectForKey:@"token"]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"signInDidSucceed" object:nil];
 }
 
-- (void)signInDidFail:(NSError *)error
+- (void)signInDidFail:(NSNumber *)errorCode;
 {
+    NSString *errorString;
     
+    switch ([errorCode integerValue]) {
+        case 400:
+            errorString = @"An error occured, please retry";
+            break;
+        case 401:
+            errorString = @"Incorrect password";
+            break;
+            
+        default:
+            errorString = @"Unexpected error";
+            break;
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"signInDidFail" object:errorString];
 }
 
 - (void)signUpDidSucceed:(NSDictionary *)response

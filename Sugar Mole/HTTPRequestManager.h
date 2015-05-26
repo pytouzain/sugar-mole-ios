@@ -11,7 +11,7 @@
 @protocol HTTPRequestManagerDelegate <NSObject>
 
 - (void)signInDidSucceed:(NSDictionary *)response;
-- (void)signInDidFail:(NSError *)error;
+- (void)signInDidFail:(NSNumber *)errorCode;
 
 - (void)signUpDidSucceed:(NSDictionary *)response;
 - (void)signUpDidFail:(NSNumber *)errorCode;
