@@ -21,4 +21,9 @@
     _token = token;
 }
 
+- (void)resetDatas
+{
+    _token = nil;
+}
+
 @end

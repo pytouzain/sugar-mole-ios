@@ -13,5 +13,6 @@
 @property (nonatomic, readonly) NSString *token;
 
 - (void)authentificationSucceed:(NSString *)token;
+- (void)resetDatas;
 
 @end

@@ -49,6 +49,11 @@ static RequestHandler *requestHandler = nil;
     [_httpRequestManager signUp:@{@"username" : email, @"password" : [password md5]}];
 }
 
+- (void)signOut
+{
+    [_dataManager resetDatas];
+}
+
 #pragma HTTPRequestManagerDelegate Methods
 
 - (void)signInDidSucceed:(NSDictionary *)response

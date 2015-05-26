@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import "RequestHandler.h"
 
 @interface SettingsViewController ()
 
@@ -25,6 +26,7 @@
 }
 
 - (IBAction)signOut:(id)sender {
+    [[RequestHandler sharedHandler] signOut];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
