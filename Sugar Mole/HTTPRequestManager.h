@@ -18,6 +18,7 @@
 
 - (void)getHousesSucceed:(NSDictionary *)response;
 - (void)getHouseSucceed:(NSDictionary *)response;
+- (void)createHouseSucceed:(NSDictionary *)response;
 
 @end
 

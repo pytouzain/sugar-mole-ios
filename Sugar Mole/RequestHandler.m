@@ -113,4 +113,9 @@ static RequestHandler *requestHandler = nil;
     
 }
 
+- (void)createHouseSucceed:(NSDictionary *)response
+{
+    
+}
+
 @end
