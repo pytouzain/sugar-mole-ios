@@ -7,6 +7,7 @@
 //
 
 #import "RequestHandler.h"
+#import "NSString+MD5.h"
 
 @interface RequestHandler ()
 
@@ -40,7 +41,7 @@ static RequestHandler *requestHandler = nil;
 
 - (void)signUpWithEmail:(NSString *)email password:(NSString *)password
 {
-    [_httpRequestManager signUp:@{@"username" : email, @"password" : password}];
+    [_httpRequestManager signUp:@{@"username" : email, @"password" : [password md5]}];
 }
 
 #pragma HTTPRequestManagerDelegate Methods

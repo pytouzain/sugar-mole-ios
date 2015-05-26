@@ -46,6 +46,7 @@
 		0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE321151B0FF8C500EDA06F /* CompatibleCell.m */; };
 		0EE321191B0FF8EC00EDA06F /* AddCompatibilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE321181B0FF8EC00EDA06F /* AddCompatibilityCell.m */; };
 		0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6C2AB1B08E0960005914E /* Default-h568.png */; };
+		0EED47AE1B1532C500BF0934 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED47AD1B1532C500BF0934 /* NSString+MD5.m */; };
 		DB872725DFFB92D648073F96 /* libPods-Sugar Mole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +137,8 @@
 		0EE321171B0FF8EC00EDA06F /* AddCompatibilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCompatibilityCell.h; sourceTree = "<group>"; };
 		0EE321181B0FF8EC00EDA06F /* AddCompatibilityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCompatibilityCell.m; sourceTree = "<group>"; };
 		0EE6C2AB1B08E0960005914E /* Default-h568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-h568.png"; sourceTree = SOURCE_ROOT; };
+		0EED47AC1B1532C500BF0934 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		0EED47AD1B1532C500BF0934 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sugar Mole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F260B22C22131A98F48FB11 /* Pods-Sugar Mole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CAEB12640E1997A85015A5 /* Pods-Sugar Mole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				0EE6C2AB1B08E0960005914E /* Default-h568.png */,
 				0ED963B41B04ED6C00A58227 /* Info.plist */,
 				0ED963B51B04ED6C00A58227 /* main.m */,
+				0EED47AC1B1532C500BF0934 /* NSString+MD5.h */,
+				0EED47AD1B1532C500BF0934 /* NSString+MD5.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				0EE320E61B0FF50800EDA06F /* User.m in Sources */,
 				0EE3210C1B0FF82D00EDA06F /* SecurityItemCell.m in Sources */,
 				0EE321091B0FF81F00EDA06F /* ACItemCell.m in Sources */,
+				0EED47AE1B1532C500BF0934 /* NSString+MD5.m in Sources */,
 				0EE320FD1B0FF6E300EDA06F /* CompatibilityItemCell.m in Sources */,
 				0EE320E31B0FF4FC00EDA06F /* Action.m in Sources */,
 				0EE321121B0FF86A00EDA06F /* CaptorItemCell.m in Sources */,
