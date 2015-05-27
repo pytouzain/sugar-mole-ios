@@ -134,4 +134,14 @@ static RequestHandler *requestHandler = nil;
     }
 }
 
+- (void)getApiDetailsSucceed:(NSDictionary *)response
+{
+    
+}
+
+- (void)getDevicesInfosSucceed:(NSDictionary *)response
+{
+    
+}
+
 @end

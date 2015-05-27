@@ -22,6 +22,9 @@
 - (void)performActionSucceed:(NSDictionary *)response;
 - (void)performActionFail:(NSNumber *)errorCode;
 
+- (void)getApiDetailsSucceed:(NSDictionary *)response;
+
+- (void)getDevicesInfosSucceed:(NSDictionary *)response;
 
 @end
 

@@ -149,4 +149,51 @@
     }];
 }
 
+#pragma mark Api Details
+
+- (void)getApiDetails:(NSString *)token
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Token %@", token] forHTTPHeaderField:@"Authorization"];
+    
+    [manager GET:[NSString stringWithFormat:@"%@/%@/", API_BASE_URL, @"apiDetails"] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+        NSLog(@"Get API Details Success : %@", response);
+        
+        if (_delegate && [_delegate respondsToSelector:@selector(getApiDetailsSucceed:)]) {
+            [_delegate getApiDetailsSucceed:response];
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Get API Details Error : %@", error);
+        
+    }];
+}
+
+#pragma mark Devices infos
+
+- (void)getDevicesInfos:(NSString *)token
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Token %@", token] forHTTPHeaderField:@"Authorization"];
+    
+    [manager GET:[NSString stringWithFormat:@"%@/%@/", API_BASE_URL, @"devicesInfo"] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+        NSLog(@"Get Devices Infos Success : %@", response);
+        
+        if (_delegate && [_delegate respondsToSelector:@selector(getDevicesInfosSucceed:)]) {
+            [_delegate getDevicesInfosSucceed:response];
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Get Devices Infos Error : %@", error);
+        
+    }];
+}
+
+
 @end
