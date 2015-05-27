@@ -118,4 +118,20 @@ static RequestHandler *requestHandler = nil;
     
 }
 
+- (void)performActionSucceed:(NSDictionary *)response
+{
+    
+}
+
+- (void)performActionFail:(NSNumber *)errorCode
+{
+    switch ([errorCode integerValue]) {
+        case 404:
+            break;
+            
+        default:
+            break;
+    }
+}
+
 @end

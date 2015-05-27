@@ -19,6 +19,9 @@
 - (void)getHousesSucceed:(NSDictionary *)response;
 - (void)getHouseSucceed:(NSDictionary *)response;
 - (void)createHouseSucceed:(NSDictionary *)response;
+- (void)performActionSucceed:(NSDictionary *)response;
+- (void)performActionFail:(NSNumber *)errorCode;
+
 
 @end
 
@@ -31,6 +34,8 @@
 
 - (void)getHouses:(NSString *)token;
 - (void)getHouse:(NSString *)uuid token:(NSString *)token;
+- (void)createHouse:(NSString *)token;
+- (void)performAction:(NSString *)action toScenario:(NSString *)scenarioName onHouse:(NSString *)uuid token:(NSString *)token;
 
 @end
 

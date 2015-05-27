@@ -123,4 +123,30 @@
     }];
 }
 
+- (void)performAction:(NSString *)action toScenario:(NSString *)scenarioName onHouse:(NSString *)uuid token:(NSString *)token
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSDictionary *parameters = @{@"scenario_name":scenarioName, @"option":action};
+    
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Token %@", token] forHTTPHeaderField:@"Authorization"];
+    
+    [manager PUT:[NSString stringWithFormat:@"%@/%@/%@", API_BASE_URL, @"house", uuid] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+        NSLog(@"Perform Action Success : %@", response);
+        
+        if (_delegate && [_delegate respondsToSelector:@selector(performActionSucceed:)]) {
+            [_delegate performActionSucceed:response];
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Perform Action Error : %@", error);
+        
+        if (_delegate && [_delegate respondsToSelector:@selector(performActionFail:)]) {
+            [_delegate performActionFail:[NSNumber numberWithInteger:[operation.response statusCode]]];
+        }
+        
+    }];
+}
+
 @end
