@@ -34,12 +34,4 @@
     _touchedButton = (UIButton *)sender;
 }
 
-
-#pragma mark - Temporary method
-
-- (IBAction)backToConnexion:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-
 @end

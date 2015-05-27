@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(signUpDidSucceed:) name:@"signUpDidSucceed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(signUpDidFail:) name:@"signUpDidFail" object:nil];
 }

@@ -40,5 +40,8 @@
 - (void)createHouse:(NSString *)token;
 - (void)performAction:(NSString *)action toScenario:(NSString *)scenarioName onHouse:(NSString *)uuid token:(NSString *)token;
 
+- (void)getApiDetails:(NSString *)token;
+- (void)getDevicesInfos:(NSString *)token;
+
 @end
 

@@ -15,4 +15,7 @@
 - (void)authentificationSucceed:(NSString *)token;
 - (void)resetDatas;
 
+- (void)persistDevicesInfos:(NSDictionary *)datas;
+- (NSArray *)fetchAllDevicesInfos;
+
 @end

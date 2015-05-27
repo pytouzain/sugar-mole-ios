@@ -21,6 +21,7 @@
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
 		0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */; };
 		0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */; };
+		0EDD73D31B1672E500BC3FFC /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD73D21B1672E500BC3FFC /* Device.m */; };
 		0EDFB6A81B10D23C0003FFE6 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */; };
 		0EE303FD1B114D9600D0659F /* VocalControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE303FC1B114D9600D0659F /* VocalControlViewController.m */; };
 		0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */; };
@@ -88,6 +89,8 @@
 		0EDD51011B0D3A1D00E18B42 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		0EDD51041B0D3FD300E18B42 /* HomePushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePushAnimator.h; sourceTree = "<group>"; };
 		0EDD51051B0D3FD300E18B42 /* HomePushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePushAnimator.m; sourceTree = "<group>"; };
+		0EDD73D11B1672E500BC3FFC /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		0EDD73D21B1672E500BC3FFC /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 		0EDFB6A61B10D23C0003FFE6 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
 		0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
 		0EE303FB1B114D9600D0659F /* VocalControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocalControlViewController.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				0EE320E21B0FF4FC00EDA06F /* Action.m */,
 				0EE320E41B0FF50800EDA06F /* User.h */,
 				0EE320E51B0FF50800EDA06F /* User.m */,
+				0EDD73D11B1672E500BC3FFC /* Device.h */,
+				0EDD73D21B1672E500BC3FFC /* Device.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -518,6 +523,7 @@
 				0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */,
 				0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */,
 				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
+				0EDD73D31B1672E500BC3FFC /* Device.m in Sources */,
 				0EE320F71B0FF6A900EDA06F /* BaseItemCell.m in Sources */,
 				0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */,
 				0EDFB6A81B10D23C0003FFE6 /* ActionsViewController.m in Sources */,

@@ -54,7 +54,14 @@ static RequestHandler *requestHandler = nil;
     [_dataManager resetDatas];
 }
 
-#pragma HTTPRequestManagerDelegate Methods
+- (void)getDevicesInfos
+{
+    [_httpRequestManager getDevicesInfos:_dataManager.token];
+}
+
+#pragma mark HTTPRequestManagerDelegate Methods
+
+#pragma Authentification
 
 - (void)signInDidSucceed:(NSDictionary *)response
 {
@@ -103,6 +110,8 @@ static RequestHandler *requestHandler = nil;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"signUpDidFail" object:errorString];
 }
 
+#pragma House
+
 - (void)getHousesSucceed:(NSDictionary *)response
 {
     
@@ -134,14 +143,18 @@ static RequestHandler *requestHandler = nil;
     }
 }
 
+#pragma API Details
+
 - (void)getApiDetailsSucceed:(NSDictionary *)response
 {
     
 }
 
+#pragma Devices Infos
+
 - (void)getDevicesInfosSucceed:(NSDictionary *)response
 {
-    
+    [_dataManager persistDevicesInfos:response];
 }
 
 @end

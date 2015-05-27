@@ -19,4 +19,6 @@
 - (void)signUpWithEmail:(NSString *)email password:(NSString *)password;
 - (void)signOut;
 
+- (void)getDevicesInfos;
+
 @end

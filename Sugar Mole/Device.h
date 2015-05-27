@@ -10,4 +10,9 @@
 
 @interface Device : RLMObject
 
+@property int type;
+@property NSDictionary *data;
+@property NSString *name;
+@property NSDictionary *desc;
+
 @end
