@@ -10,6 +10,8 @@
 
 #import "DataManager.h"
 #import "Device.h"
+#import "Data.h"
+#import "Description.h"
 
 @interface DataManager ()
 
@@ -58,9 +60,23 @@
     for (id data in datas) {
         Device *newDevice = [[Device alloc] init];
         newDevice.type = [data[@"type"] intValue];
-        newDevice.data = data[@"data"];
+        
+        for (NSString *key in (NSDictionary *)data[@"data"]) {
+            Data *newData = [[Data alloc] init];
+            newData.key = key;
+            newData.value = [((NSDictionary *)data[@"data"]) objectForKey:key];
+            [newDevice.data addObject:newData];
+        }
+        
         newDevice.name = data[@"name"];
-        newDevice.desc = data[@"desc"];
+        
+        for (NSString *key in (NSDictionary *)data[@"desc"]) {
+            Description *newDescription = [[Description alloc] init];
+            newDescription.parameters = key;
+            newDescription.value = [((NSDictionary *)data[@"desc"]) objectForKey:key];
+            [newDevice.desc addObject:newDescription];
+        }
+        
         [_defaultRealm addOrUpdateObject:newDevice];
     }
     

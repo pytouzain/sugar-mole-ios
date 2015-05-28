@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
+		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
 		0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B81B04ED6C00A58227 /* AppDelegate.m */; };
 		0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* RegisterViewController.m */; };
@@ -62,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E52FCE91B17D17300279F48 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		0E52FCEA1B17D17300279F48 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		0E52FCEC1B17D18900279F48 /* Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
+		0E52FCED1B17D18900279F48 /* Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Description.m; sourceTree = "<group>"; };
 		0ED963B01B04ED6C00A58227 /* Sugar Mole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sugar Mole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED963B41B04ED6C00A58227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED963B51B04ED6C00A58227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -278,6 +284,10 @@
 				0EE320E51B0FF50800EDA06F /* User.m */,
 				0EDD73D11B1672E500BC3FFC /* Device.h */,
 				0EDD73D21B1672E500BC3FFC /* Device.m */,
+				0E52FCE91B17D17300279F48 /* Data.h */,
+				0E52FCEA1B17D17300279F48 /* Data.m */,
+				0E52FCEC1B17D18900279F48 /* Description.h */,
+				0E52FCED1B17D18900279F48 /* Description.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -524,6 +534,7 @@
 				0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */,
 				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
 				0EDD73D31B1672E500BC3FFC /* Device.m in Sources */,
+				0E52FCEE1B17D18900279F48 /* Description.m in Sources */,
 				0EE320F71B0FF6A900EDA06F /* BaseItemCell.m in Sources */,
 				0EDD51061B0D3FD300E18B42 /* HomePushAnimator.m in Sources */,
 				0EDFB6A81B10D23C0003FFE6 /* ActionsViewController.m in Sources */,
@@ -537,6 +548,7 @@
 				0EE320ED1B0FF5E900EDA06F /* ScenariosTableViewController.m in Sources */,
 				0EE320E01B0FF4ED00EDA06F /* Scenario.m in Sources */,
 				0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */,
+				0E52FCEB1B17D17300279F48 /* Data.m in Sources */,
 				0EE320F01B0FF5F800EDA06F /* ActionsTypeTableViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,
 				0EE3210F1B0FF84400EDA06F /* HeaterItemCell.m in Sources */,

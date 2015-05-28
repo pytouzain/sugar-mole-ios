@@ -7,12 +7,16 @@
 //
 
 #import "RLMObject.h"
+#import "RLMArray.h"
+
+#import "Data.h"
+#import "Description.h"
 
 @interface Device : RLMObject
 
 @property int type;
-@property NSDictionary *data;
+@property RLMArray<Data> *data;
 @property NSString *name;
-@property NSDictionary *desc;
+@property RLMArray<Description> *desc;
 
 @end
