@@ -10,4 +10,7 @@
 
 @interface ActionItemCell : BaseItemCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *actionStateImage;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
 @end

@@ -10,7 +10,6 @@
 
 @interface ActionsTypeTableViewController : ItemsTableViewController
 
-@property (nonatomic, strong) NSString *cellIdentifier;
 @property (nonatomic, weak) IBOutlet UIButton *topButton;
 
 @end

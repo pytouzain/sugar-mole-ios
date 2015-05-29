@@ -10,12 +10,27 @@
 
 @implementation PlugItemCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)configureCellForIndex:(NSUInteger)index
+{
+    switch (index) {
+        case 0:
+            self.actionStateImage.image = [UIImage imageNamed:@"Electricity-100_fat"];
+            self.descriptionLabel.text = @"TV";
+            break;
+            
+        case 1:
+            self.actionStateImage.image = [UIImage imageNamed:@"Electricity-100_thin"];
+            self.descriptionLabel.text = @"Laptop";
+            break;
+            
+        case 2:
+            self.actionStateImage.image = [UIImage imageNamed:@"Electricity-100_fat"];
+            self.descriptionLabel.text = @"Coffee Machine";
+            break;
+            
+        default:
+            break;
+    }
 }
-*/
 
 @end
