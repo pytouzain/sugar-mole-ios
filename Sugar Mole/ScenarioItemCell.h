@@ -10,4 +10,6 @@
 
 @interface ScenarioItemCell : BaseItemCell
 
+- (void)configureCellForIndex:(NSUInteger)index;
+
 @end
