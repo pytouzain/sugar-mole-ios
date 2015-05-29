@@ -10,4 +10,6 @@
 
 @interface ItemsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) NSString *cellIdentifier;
+
 @end

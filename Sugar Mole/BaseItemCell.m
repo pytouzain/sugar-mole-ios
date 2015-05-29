@@ -29,4 +29,9 @@
     self.contentView.frame = frame;
 }
 
+- (void)configureCellForIndex:(NSUInteger)index
+{
+    
+}
+
 @end

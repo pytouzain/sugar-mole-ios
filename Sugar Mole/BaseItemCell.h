@@ -10,4 +10,6 @@
 
 @interface BaseItemCell : UITableViewCell
 
+- (void)configureCellForIndex:(NSUInteger)index;
+
 @end
