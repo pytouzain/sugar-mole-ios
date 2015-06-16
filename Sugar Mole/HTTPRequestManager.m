@@ -45,14 +45,14 @@
         NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
         NSLog(@"Sign up uccess : %@", response);
         
-        if (_delegate && [_delegate respondsToSelector:@selector(signInDidSucceed:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(signUpDidSucceed:)]) {
             [_delegate signUpDidSucceed:response];
         }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Sign up Error : %@", error);
         
-        if (_delegate && [_delegate respondsToSelector:@selector(signInDidFail:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(signUpDidFail:)]) {
             [_delegate signUpDidFail:[NSNumber numberWithInteger:[operation.response statusCode]]];
         }
     }];
