@@ -17,7 +17,6 @@
 		0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED963C21B04ED6C00A58227 /* LaunchScreen.xib */; };
 		0ED963D01B04ED6C00A58227 /* Sugar_MoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963CF1B04ED6C00A58227 /* Sugar_MoleTests.m */; };
 		0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963DA1B04FA2D00A58227 /* HomeViewController.m */; };
-		0ED963E11B04FAA200A58227 /* NewScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */; };
 		0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963E91B04FAD500A58227 /* SettingsViewController.m */; };
 		0EDCB9571B0E8C6B00D05127 /* HomePopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCB9561B0E8C6B00D05127 /* HomePopAnimator.m */; };
 		0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD097B1B0772D20009F193 /* LoginViewController.m */; };
@@ -50,6 +49,7 @@
 		0EE321191B0FF8EC00EDA06F /* AddCompatibilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE321181B0FF8EC00EDA06F /* AddCompatibilityCell.m */; };
 		0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6C2AB1B08E0960005914E /* Default-h568.png */; };
 		0EED47AE1B1532C500BF0934 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED47AD1B1532C500BF0934 /* NSString+MD5.m */; };
+		0EEE40971B363BE6006CE3FC /* AddScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE40961B363BE6006CE3FC /* AddScenarioViewController.m */; };
 		DB872725DFFB92D648073F96 /* libPods-Sugar Mole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */; };
 /* End PBXBuildFile section */
 
@@ -83,8 +83,6 @@
 		0ED963CF1B04ED6C00A58227 /* Sugar_MoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sugar_MoleTests.m; sourceTree = "<group>"; };
 		0ED963D91B04FA2D00A58227 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		0ED963DA1B04FA2D00A58227 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScenarioViewController.h; sourceTree = "<group>"; };
-		0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScenarioViewController.m; sourceTree = "<group>"; };
 		0ED963E81B04FAD500A58227 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		0ED963E91B04FAD500A58227 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		0EDCB9551B0E8C6B00D05127 /* HomePopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePopAnimator.h; sourceTree = "<group>"; };
@@ -148,6 +146,8 @@
 		0EE6C2AB1B08E0960005914E /* Default-h568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-h568.png"; sourceTree = SOURCE_ROOT; };
 		0EED47AC1B1532C500BF0934 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		0EED47AD1B1532C500BF0934 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		0EEE40951B363BE6006CE3FC /* AddScenarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScenarioViewController.h; sourceTree = "<group>"; };
+		0EEE40961B363BE6006CE3FC /* AddScenarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScenarioViewController.m; sourceTree = "<group>"; };
 		6511277E147D9141D1B5CF37 /* libPods-Sugar Mole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sugar Mole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F260B22C22131A98F48FB11 /* Pods-Sugar Mole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CAEB12640E1997A85015A5 /* Pods-Sugar Mole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sugar Mole.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sugar Mole/Pods-Sugar Mole.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,8 +248,6 @@
 				0ED963DA1B04FA2D00A58227 /* HomeViewController.m */,
 				0EDFB6A61B10D23C0003FFE6 /* ActionsViewController.h */,
 				0EDFB6A71B10D23C0003FFE6 /* ActionsViewController.m */,
-				0ED963DF1B04FAA200A58227 /* NewScenarioViewController.h */,
-				0ED963E01B04FAA200A58227 /* NewScenarioViewController.m */,
 				0ED963E81B04FAD500A58227 /* SettingsViewController.h */,
 				0ED963E91B04FAD500A58227 /* SettingsViewController.m */,
 				0EE303FB1B114D9600D0659F /* VocalControlViewController.h */,
@@ -317,6 +315,8 @@
 				0EE320EF1B0FF5F800EDA06F /* ActionsTypeTableViewController.m */,
 				0EE320F11B0FF62900EDA06F /* CompatibilitiesTableViewController.h */,
 				0EE320F21B0FF62900EDA06F /* CompatibilitiesTableViewController.m */,
+				0EEE40951B363BE6006CE3FC /* AddScenarioViewController.h */,
+				0EEE40961B363BE6006CE3FC /* AddScenarioViewController.m */,
 			);
 			name = Tableviews;
 			sourceTree = "<group>";
@@ -566,8 +566,8 @@
 				0EE321121B0FF86A00EDA06F /* CaptorItemCell.m in Sources */,
 				0EE321191B0FF8EC00EDA06F /* AddCompatibilityCell.m in Sources */,
 				0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */,
+				0EEE40971B363BE6006CE3FC /* AddScenarioViewController.m in Sources */,
 				0EE320F31B0FF62900EDA06F /* CompatibilitiesTableViewController.m in Sources */,
-				0ED963E11B04FAA200A58227 /* NewScenarioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
