@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */; };
+		0E1195A51B38CA65000F2B3D /* AddScenarioDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */; };
 		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
@@ -67,6 +68,8 @@
 /* Begin PBXFileReference section */
 		0E11959A1B38C3F6000F2B3D /* SpacingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacingTableViewCell.h; sourceTree = "<group>"; };
 		0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacingTableViewCell.m; sourceTree = "<group>"; };
+		0E1195A31B38CA65000F2B3D /* AddScenarioDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScenarioDataModel.h; sourceTree = "<group>"; };
+		0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScenarioDataModel.m; sourceTree = "<group>"; };
 		0E52FCE91B17D17300279F48 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		0E52FCEA1B17D17300279F48 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		0E52FCEC1B17D18900279F48 /* Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				0E11959D1B38C7E6000F2B3D /* Realm models */,
+				0E1195A31B38CA65000F2B3D /* AddScenarioDataModel.h */,
+				0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -600,6 +605,7 @@
 				0EDCB9571B0E8C6B00D05127 /* HomePopAnimator.m in Sources */,
 				0EE320ED1B0FF5E900EDA06F /* ScenariosTableViewController.m in Sources */,
 				0EE320E01B0FF4ED00EDA06F /* Scenario.m in Sources */,
+				0E1195A51B38CA65000F2B3D /* AddScenarioDataModel.m in Sources */,
 				0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */,
 				0E52FCEB1B17D17300279F48 /* Data.m in Sources */,
 				0EE320F01B0FF5F800EDA06F /* ActionsTypeTableViewController.m in Sources */,
