@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */; };
 		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E11959A1B38C3F6000F2B3D /* SpacingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacingTableViewCell.h; sourceTree = "<group>"; };
+		0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacingTableViewCell.m; sourceTree = "<group>"; };
 		0E52FCE91B17D17300279F48 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		0E52FCEA1B17D17300279F48 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		0E52FCEC1B17D18900279F48 /* Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
@@ -172,6 +175,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E11959D1B38C7E6000F2B3D /* Realm models */ = {
+			isa = PBXGroup;
+			children = (
+				0EE320DE1B0FF4ED00EDA06F /* Scenario.h */,
+				0EE320DF1B0FF4ED00EDA06F /* Scenario.m */,
+				0EE320E11B0FF4FC00EDA06F /* Action.h */,
+				0EE320E21B0FF4FC00EDA06F /* Action.m */,
+				0EE320E41B0FF50800EDA06F /* User.h */,
+				0EE320E51B0FF50800EDA06F /* User.m */,
+				0EDD73D11B1672E500BC3FFC /* Device.h */,
+				0EDD73D21B1672E500BC3FFC /* Device.m */,
+				0E52FCE91B17D17300279F48 /* Data.h */,
+				0E52FCEA1B17D17300279F48 /* Data.m */,
+				0E52FCEC1B17D18900279F48 /* Description.h */,
+				0E52FCED1B17D18900279F48 /* Description.m */,
+			);
+			name = "Realm models";
+			sourceTree = "<group>";
+		};
+		0E11959E1B38C83B000F2B3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EE320F41B0FF62D00EDA06F /* Tableview cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0E11959F1B38C871000F2B3D /* HTTPRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				0EE320D51B0FE19B00EDA06F /* HTTPRequestManager.h */,
+				0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */,
+			);
+			name = HTTPRequestManager;
+			sourceTree = "<group>";
+		};
+		0E1195A01B38C87F000F2B3D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0EE320D81B0FF17900EDA06F /* DataManager.h */,
+				0EE320D91B0FF17900EDA06F /* DataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		0E1195A11B38C88C000F2B3D /* RequestHandler */ = {
+			isa = PBXGroup;
+			children = (
+				0EE320DB1B0FF18B00EDA06F /* RequestHandler.h */,
+				0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */,
+			);
+			name = RequestHandler;
+			sourceTree = "<group>";
+		};
+		0E1195A21B38C8D2000F2B3D /* NSString+MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				0EED47AC1B1532C500BF0934 /* NSString+MD5.h */,
+				0EED47AD1B1532C500BF0934 /* NSString+MD5.m */,
+			);
+			name = "NSString+MD5";
+			sourceTree = "<group>";
+		};
 		0ED963A71B04ED6C00A58227 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +264,7 @@
 				0ED963B71B04ED6C00A58227 /* AppDelegate.h */,
 				0ED963B81B04ED6C00A58227 /* AppDelegate.m */,
 				0EDD50FF1B0D380800E18B42 /* Controllers */,
+				0E11959E1B38C83B000F2B3D /* Views */,
 				0EE320D31B0FE0C000EDA06F /* Model */,
 				0EE320D41B0FE0D100EDA06F /* Services */,
 				0ED963BD1B04ED6C00A58227 /* Main.storyboard */,
@@ -214,8 +281,6 @@
 				0EE6C2AB1B08E0960005914E /* Default-h568.png */,
 				0ED963B41B04ED6C00A58227 /* Info.plist */,
 				0ED963B51B04ED6C00A58227 /* main.m */,
-				0EED47AC1B1532C500BF0934 /* NSString+MD5.h */,
-				0EED47AD1B1532C500BF0934 /* NSString+MD5.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -253,7 +318,6 @@
 				0EE303FB1B114D9600D0659F /* VocalControlViewController.h */,
 				0EE303FC1B114D9600D0659F /* VocalControlViewController.m */,
 				0EE320E71B0FF54300EDA06F /* Tableviews */,
-				0EDD51031B0D3F5200E18B42 /* Navigation */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -274,18 +338,7 @@
 		0EE320D31B0FE0C000EDA06F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0EE320DE1B0FF4ED00EDA06F /* Scenario.h */,
-				0EE320DF1B0FF4ED00EDA06F /* Scenario.m */,
-				0EE320E11B0FF4FC00EDA06F /* Action.h */,
-				0EE320E21B0FF4FC00EDA06F /* Action.m */,
-				0EE320E41B0FF50800EDA06F /* User.h */,
-				0EE320E51B0FF50800EDA06F /* User.m */,
-				0EDD73D11B1672E500BC3FFC /* Device.h */,
-				0EDD73D21B1672E500BC3FFC /* Device.m */,
-				0E52FCE91B17D17300279F48 /* Data.h */,
-				0E52FCEA1B17D17300279F48 /* Data.m */,
-				0E52FCEC1B17D18900279F48 /* Description.h */,
-				0E52FCED1B17D18900279F48 /* Description.m */,
+				0E11959D1B38C7E6000F2B3D /* Realm models */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,12 +346,11 @@
 		0EE320D41B0FE0D100EDA06F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0EE320D51B0FE19B00EDA06F /* HTTPRequestManager.h */,
-				0EE320D61B0FE19B00EDA06F /* HTTPRequestManager.m */,
-				0EE320D81B0FF17900EDA06F /* DataManager.h */,
-				0EE320D91B0FF17900EDA06F /* DataManager.m */,
-				0EE320DB1B0FF18B00EDA06F /* RequestHandler.h */,
-				0EE320DC1B0FF18B00EDA06F /* RequestHandler.m */,
+				0E1195A21B38C8D2000F2B3D /* NSString+MD5 */,
+				0EDD51031B0D3F5200E18B42 /* Navigation */,
+				0E11959F1B38C871000F2B3D /* HTTPRequestManager */,
+				0E1195A01B38C87F000F2B3D /* DataManager */,
+				0E1195A11B38C88C000F2B3D /* RequestHandler */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -306,7 +358,6 @@
 		0EE320E71B0FF54300EDA06F /* Tableviews */ = {
 			isa = PBXGroup;
 			children = (
-				0EE320F41B0FF62D00EDA06F /* Tableview cells */,
 				0EE320E81B0FF58600EDA06F /* ItemsTableViewController.h */,
 				0EE320E91B0FF58600EDA06F /* ItemsTableViewController.m */,
 				0EE320EB1B0FF5E900EDA06F /* ScenariosTableViewController.h */,
@@ -326,6 +377,8 @@
 			children = (
 				0EE320F51B0FF6A900EDA06F /* BaseItemCell.h */,
 				0EE320F61B0FF6A900EDA06F /* BaseItemCell.m */,
+				0E11959A1B38C3F6000F2B3D /* SpacingTableViewCell.h */,
+				0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */,
 				0EE321131B0FF88700EDA06F /* Action */,
 				0EE3211A1B0FF8F600EDA06F /* Compatibility */,
 				0EE3211B1B0FF90600EDA06F /* Scenario */,
@@ -564,6 +617,7 @@
 				0EE320FD1B0FF6E300EDA06F /* CompatibilityItemCell.m in Sources */,
 				0EE320E31B0FF4FC00EDA06F /* Action.m in Sources */,
 				0EE321121B0FF86A00EDA06F /* CaptorItemCell.m in Sources */,
+				0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */,
 				0EE321191B0FF8EC00EDA06F /* AddCompatibilityCell.m in Sources */,
 				0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */,
 				0EEE40971B363BE6006CE3FC /* AddScenarioViewController.m in Sources */,
