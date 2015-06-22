@@ -10,4 +10,9 @@
 
 @interface AddScenarioDataModel : NSObject
 
+@property (nonatomic, strong) NSMutableArray *triggers;
+@property (nonatomic, strong) NSMutableArray *actions;
+
+- (NSUInteger)count;
+
 @end
