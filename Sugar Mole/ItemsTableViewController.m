@@ -8,6 +8,9 @@
 
 #import "ItemsTableViewController.h"
 
+#import "BaseItemCell.h"
+#import "SpacingTableViewCell.h"
+
 @interface ItemsTableViewController ()
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -16,53 +19,53 @@
 
 @implementation ItemsTableViewController
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.dataSource = [[NSMutableArray alloc] init];
+        self.cellIdentifier = @"baseIdentifier";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [_tableView registerClass:[BaseItemCell class] forCellReuseIdentifier:@"baseIdentifier"];
+    [_tableView registerClass:[SpacingTableViewCell class] forCellReuseIdentifier:@"spacingReuseIdentifier"];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return NUMBER_OF_ROW(3);
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
+    if (indexPath.row % 2 == 0) {
+        SpacingTableViewCell *cell = (SpacingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"spacingReuseIdentifier" forIndexPath:indexPath];
+        
+        [cell.contentView setAlpha:0];
+        [cell setBackgroundColor:[UIColor clearColor]]; 
+        [cell setUserInteractionEnabled:NO];
+        return cell;
+    }
     
-    // Configure the cell...
+    BaseItemCell *cell = (BaseItemCell *)[tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
     
+    [cell configureCellForIndex:INDEX_OF_ROW(indexPath.row)];
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row % 2 == 0)
+        return 20;
     return 75;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 20.;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *headerView = [[UIView alloc] init];
-    headerView.backgroundColor = [UIColor clearColor];
-    return headerView;
 }
 
 /*
