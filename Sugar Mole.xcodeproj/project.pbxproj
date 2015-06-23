@@ -15,6 +15,7 @@
 		0E1195B31B3A12E8000F2B3D /* ActionDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */; };
 		0E1195B71B3A134C000F2B3D /* ItemDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195B61B3A134C000F2B3D /* ItemDataModel.m */; };
 		0E1195BB1B3A14CB000F2B3D /* AddItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */; };
+		0E1195BE1B3A22DE000F2B3D /* AddTriggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195BD1B3A22DE000F2B3D /* AddTriggerViewController.m */; };
 		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
@@ -87,6 +88,8 @@
 		0E1195B61B3A134C000F2B3D /* ItemDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDataModel.m; sourceTree = "<group>"; };
 		0E1195B91B3A14CB000F2B3D /* AddItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemCell.h; sourceTree = "<group>"; };
 		0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemCell.m; sourceTree = "<group>"; };
+		0E1195BC1B3A22DE000F2B3D /* AddTriggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTriggerViewController.h; sourceTree = "<group>"; };
+		0E1195BD1B3A22DE000F2B3D /* AddTriggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTriggerViewController.m; sourceTree = "<group>"; };
 		0E52FCE91B17D17300279F48 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		0E52FCEA1B17D17300279F48 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		0E52FCEC1B17D18900279F48 /* Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
@@ -357,6 +360,8 @@
 				0ED963E91B04FAD500A58227 /* SettingsViewController.m */,
 				0EE303FB1B114D9600D0659F /* VocalControlViewController.h */,
 				0EE303FC1B114D9600D0659F /* VocalControlViewController.m */,
+				0E1195BC1B3A22DE000F2B3D /* AddTriggerViewController.h */,
+				0E1195BD1B3A22DE000F2B3D /* AddTriggerViewController.m */,
 				0EE320E71B0FF54300EDA06F /* Tableviews */,
 			);
 			name = Controllers;
@@ -670,6 +675,7 @@
 				0EE321091B0FF81F00EDA06F /* ACItemCell.m in Sources */,
 				0EED47AE1B1532C500BF0934 /* NSString+MD5.m in Sources */,
 				0EE320FD1B0FF6E300EDA06F /* CompatibilityItemCell.m in Sources */,
+				0E1195BE1B3A22DE000F2B3D /* AddTriggerViewController.m in Sources */,
 				0EE320E31B0FF4FC00EDA06F /* Action.m in Sources */,
 				0EE321121B0FF86A00EDA06F /* CaptorItemCell.m in Sources */,
 				0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */,
