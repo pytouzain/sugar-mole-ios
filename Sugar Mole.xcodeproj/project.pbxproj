@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */; };
 		0E1195A51B38CA65000F2B3D /* AddScenarioDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */; };
+		0E1195AB1B3A01DA000F2B3D /* AddScenarioHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195AA1B3A01DA000F2B3D /* AddScenarioHeaderView.m */; };
+		0E1195AD1B3A01FA000F2B3D /* AddScenarioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1195AC1B3A01FA000F2B3D /* AddScenarioHeaderView.xib */; };
+		0E1195B01B3A12D9000F2B3D /* TriggerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195AF1B3A12D9000F2B3D /* TriggerDataModel.m */; };
+		0E1195B31B3A12E8000F2B3D /* ActionDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */; };
+		0E1195B71B3A134C000F2B3D /* ItemDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195B61B3A134C000F2B3D /* ItemDataModel.m */; };
+		0E1195BB1B3A14CB000F2B3D /* AddItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */; };
 		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
@@ -70,6 +76,17 @@
 		0E11959B1B38C3F6000F2B3D /* SpacingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpacingTableViewCell.m; sourceTree = "<group>"; };
 		0E1195A31B38CA65000F2B3D /* AddScenarioDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScenarioDataModel.h; sourceTree = "<group>"; };
 		0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScenarioDataModel.m; sourceTree = "<group>"; };
+		0E1195A91B3A01DA000F2B3D /* AddScenarioHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScenarioHeaderView.h; sourceTree = "<group>"; };
+		0E1195AA1B3A01DA000F2B3D /* AddScenarioHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScenarioHeaderView.m; sourceTree = "<group>"; };
+		0E1195AC1B3A01FA000F2B3D /* AddScenarioHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddScenarioHeaderView.xib; sourceTree = "<group>"; };
+		0E1195AE1B3A12D9000F2B3D /* TriggerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerDataModel.h; sourceTree = "<group>"; };
+		0E1195AF1B3A12D9000F2B3D /* TriggerDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerDataModel.m; sourceTree = "<group>"; };
+		0E1195B11B3A12E8000F2B3D /* ActionDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionDataModel.h; sourceTree = "<group>"; };
+		0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionDataModel.m; sourceTree = "<group>"; };
+		0E1195B51B3A134C000F2B3D /* ItemDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDataModel.h; sourceTree = "<group>"; };
+		0E1195B61B3A134C000F2B3D /* ItemDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDataModel.m; sourceTree = "<group>"; };
+		0E1195B91B3A14CB000F2B3D /* AddItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemCell.h; sourceTree = "<group>"; };
+		0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemCell.m; sourceTree = "<group>"; };
 		0E52FCE91B17D17300279F48 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		0E52FCEA1B17D17300279F48 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		0E52FCEC1B17D18900279F48 /* Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
@@ -201,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE320F41B0FF62D00EDA06F /* Tableview cells */,
+				0E1195B41B3A1312000F2B3D /* AddScenario header view */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -239,6 +257,25 @@
 				0EED47AD1B1532C500BF0934 /* NSString+MD5.m */,
 			);
 			name = "NSString+MD5";
+			sourceTree = "<group>";
+		};
+		0E1195B41B3A1312000F2B3D /* AddScenario header view */ = {
+			isa = PBXGroup;
+			children = (
+				0E1195A91B3A01DA000F2B3D /* AddScenarioHeaderView.h */,
+				0E1195AA1B3A01DA000F2B3D /* AddScenarioHeaderView.m */,
+				0E1195AC1B3A01FA000F2B3D /* AddScenarioHeaderView.xib */,
+			);
+			name = "AddScenario header view";
+			sourceTree = "<group>";
+		};
+		0E1195B81B3A149B000F2B3D /* Add Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				0E1195B91B3A14CB000F2B3D /* AddItemCell.h */,
+				0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */,
+			);
+			name = "Add Scenario";
 			sourceTree = "<group>";
 		};
 		0ED963A71B04ED6C00A58227 = {
@@ -344,6 +381,12 @@
 				0E11959D1B38C7E6000F2B3D /* Realm models */,
 				0E1195A31B38CA65000F2B3D /* AddScenarioDataModel.h */,
 				0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */,
+				0E1195AE1B3A12D9000F2B3D /* TriggerDataModel.h */,
+				0E1195AF1B3A12D9000F2B3D /* TriggerDataModel.m */,
+				0E1195B11B3A12E8000F2B3D /* ActionDataModel.h */,
+				0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */,
+				0E1195B51B3A134C000F2B3D /* ItemDataModel.h */,
+				0E1195B61B3A134C000F2B3D /* ItemDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -387,6 +430,7 @@
 				0EE321131B0FF88700EDA06F /* Action */,
 				0EE3211A1B0FF8F600EDA06F /* Compatibility */,
 				0EE3211B1B0FF90600EDA06F /* Scenario */,
+				0E1195B81B3A149B000F2B3D /* Add Scenario */,
 			);
 			name = "Tableview cells";
 			sourceTree = "<group>";
@@ -535,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */,
+				0E1195AD1B3A01FA000F2B3D /* AddScenarioHeaderView.xib in Resources */,
 				0ED963BF1B04ED6C00A58227 /* Main.storyboard in Resources */,
 				0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */,
 				0ED963C11B04ED6C00A58227 /* Images.xcassets in Resources */,
@@ -602,11 +647,14 @@
 				0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */,
 				0EE321001B0FF6F800EDA06F /* ScenarioItemCell.m in Sources */,
 				0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */,
+				0E1195B31B3A12E8000F2B3D /* ActionDataModel.m in Sources */,
 				0EDCB9571B0E8C6B00D05127 /* HomePopAnimator.m in Sources */,
 				0EE320ED1B0FF5E900EDA06F /* ScenariosTableViewController.m in Sources */,
+				0E1195BB1B3A14CB000F2B3D /* AddItemCell.m in Sources */,
 				0EE320E01B0FF4ED00EDA06F /* Scenario.m in Sources */,
 				0E1195A51B38CA65000F2B3D /* AddScenarioDataModel.m in Sources */,
 				0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */,
+				0E1195AB1B3A01DA000F2B3D /* AddScenarioHeaderView.m in Sources */,
 				0E52FCEB1B17D17300279F48 /* Data.m in Sources */,
 				0EE320F01B0FF5F800EDA06F /* ActionsTypeTableViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,
@@ -614,6 +662,7 @@
 				0EE320D71B0FE19B00EDA06F /* HTTPRequestManager.m in Sources */,
 				0EE320FA1B0FF6C900EDA06F /* ActionItemCell.m in Sources */,
 				0EE321061B0FF7FD00EDA06F /* PlugItemCell.m in Sources */,
+				0E1195B71B3A134C000F2B3D /* ItemDataModel.m in Sources */,
 				0EE303FD1B114D9600D0659F /* VocalControlViewController.m in Sources */,
 				0EE321031B0FF73600EDA06F /* LightItemCell.m in Sources */,
 				0EE320E61B0FF50800EDA06F /* User.m in Sources */,
@@ -625,6 +674,7 @@
 				0EE321121B0FF86A00EDA06F /* CaptorItemCell.m in Sources */,
 				0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */,
 				0EE321191B0FF8EC00EDA06F /* AddCompatibilityCell.m in Sources */,
+				0E1195B01B3A12D9000F2B3D /* TriggerDataModel.m in Sources */,
 				0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */,
 				0EEE40971B363BE6006CE3FC /* AddScenarioViewController.m in Sources */,
 				0EE320F31B0FF62900EDA06F /* CompatibilitiesTableViewController.m in Sources */,
