@@ -3,7 +3,7 @@
 
 target 'Sugar Mole' do
 
-pod "Realm"
+pod "Realm", "~> 0.93.2" 
 pod "AFNetworking", "~> 2.0"
 
 end
