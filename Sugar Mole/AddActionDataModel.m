@@ -16,17 +16,17 @@
 }
 
 - (NSDictionary *)actions {
-    return @{@"Security" : @[[[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Open the front door"],
-                             [[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Close the front door"]
+    return @{@"Security" : @[[[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Unlock-100"] descriptionItem:@"Open the front door"],
+                             [[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Lock 2-100_white"] descriptionItem:@"Close the front door"]
                              ],
-             @"Lamps" : @[[[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Turn on living room lamp"],
-                          [[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Turn off living room lamp"]
+             @"Lamps" : @[[[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Idea-100"] descriptionItem:@"Turn on living room lamp"],
+                          [[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Idea-100_switch_off"] descriptionItem:@"Turn off living room lamp"]
                           ],
-             @"Air conditionning" : @[[[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Turn on the bedroom AC"],
-                                      [[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Turn off the bedroom AC"]
+             @"Air conditionning" : @[[[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Winter-100_fat"] descriptionItem:@"Turn on the bedroom AC"],
+                                      [[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Winter-100_thin"] descriptionItem:@"Turn off the bedroom AC"]
                                       ],
-             @"Heater" : @[[[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Turn on the kids bedroom heater"],
-                           [[ActionDataModel alloc] initWithImage:nil descriptionItem:@"Turn off the kids bedroom heater"]]
+             @"Heater" : @[[[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Heating Room Filled-100"] descriptionItem:@"Turn on the kids bedroom heater"],
+                           [[ActionDataModel alloc] initWithImage:[UIImage imageNamed:@"Heating Room-100"] descriptionItem:@"Turn off the kids bedroom heater"]]
              };
 }
 

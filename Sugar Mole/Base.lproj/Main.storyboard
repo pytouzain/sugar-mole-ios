@@ -290,7 +290,7 @@
                                 <rect key="frame" x="16" y="202" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="H9O-SB-2He">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wet-100" id="H9O-SB-2He">
                                         <rect key="frame" x="10" y="10" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -322,7 +322,7 @@
                                 <rect key="frame" x="16" y="148" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mtx-G7-zjz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock-100" id="mtx-G7-zjz">
                                         <rect key="frame" x="10" y="10" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -460,7 +460,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addActionIdentifier" rowHeight="50" id="zf2-Iq-OEU" customClass="AddActionCell">
-                                        <rect key="frame" x="0.0" y="49.5" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zf2-Iq-OEU" id="rTB-Aq-qVV">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -1615,6 +1615,7 @@
     <resources>
         <image name="Activity Grid 2-100" width="100" height="100"/>
         <image name="Air Conditioner-100" width="100" height="100"/>
+        <image name="Clock-100" width="100" height="100"/>
         <image name="Electricity-100_fat" width="100" height="100"/>
         <image name="Heating Room Filled-100" width="100" height="100"/>
         <image name="Heating Room-100" width="100" height="100"/>
@@ -1633,6 +1634,7 @@
         <image name="System Information-100" width="100" height="100"/>
         <image name="Temperature Filled-100" width="100" height="100"/>
         <image name="Wall Socket-100" width="100" height="100"/>
+        <image name="Wet-100" width="100" height="100"/>
         <image name="Winter-100_fat" width="100" height="100"/>
         <image name="arrow_back_white" width="64" height="64"/>
         <image name="arrow_white_down" width="64" height="64"/>
