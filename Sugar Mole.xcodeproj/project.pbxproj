@@ -16,6 +16,11 @@
 		0E1195B71B3A134C000F2B3D /* ItemDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195B61B3A134C000F2B3D /* ItemDataModel.m */; };
 		0E1195BB1B3A14CB000F2B3D /* AddItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */; };
 		0E1195BE1B3A22DE000F2B3D /* AddTriggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195BD1B3A22DE000F2B3D /* AddTriggerViewController.m */; };
+		0E1195C11B3B707F000F2B3D /* AddActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195C01B3B707F000F2B3D /* AddActionViewController.m */; };
+		0E1195C41B3B714C000F2B3D /* AddActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195C31B3B714C000F2B3D /* AddActionCell.m */; };
+		0E1195C81B3B72D6000F2B3D /* AddActionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195C71B3B72D6000F2B3D /* AddActionHeaderView.m */; };
+		0E1195CA1B3B72EE000F2B3D /* AddActionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1195C91B3B72EE000F2B3D /* AddActionHeaderView.xib */; };
+		0E1195CD1B3B7655000F2B3D /* AddActionDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1195CC1B3B7655000F2B3D /* AddActionDataModel.m */; };
 		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
@@ -90,6 +95,16 @@
 		0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemCell.m; sourceTree = "<group>"; };
 		0E1195BC1B3A22DE000F2B3D /* AddTriggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTriggerViewController.h; sourceTree = "<group>"; };
 		0E1195BD1B3A22DE000F2B3D /* AddTriggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTriggerViewController.m; sourceTree = "<group>"; };
+		0E1195BF1B3B707F000F2B3D /* AddActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddActionViewController.h; sourceTree = "<group>"; };
+		0E1195C01B3B707F000F2B3D /* AddActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddActionViewController.m; sourceTree = "<group>"; };
+		0E1195C21B3B714C000F2B3D /* AddActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddActionCell.h; sourceTree = "<group>"; };
+		0E1195C31B3B714C000F2B3D /* AddActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddActionCell.m; sourceTree = "<group>"; };
+		0E1195C61B3B72D6000F2B3D /* AddActionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddActionHeaderView.h; sourceTree = "<group>"; };
+		0E1195C71B3B72D6000F2B3D /* AddActionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddActionHeaderView.m; sourceTree = "<group>"; };
+		0E1195C91B3B72EE000F2B3D /* AddActionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddActionHeaderView.xib; sourceTree = "<group>"; };
+		0E1195CB1B3B7655000F2B3D /* AddActionDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddActionDataModel.h; sourceTree = "<group>"; };
+		0E1195CC1B3B7655000F2B3D /* AddActionDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddActionDataModel.m; sourceTree = "<group>"; };
+		0E1195CF1B3B7D1F000F2B3D /* SugarMole-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SugarMole-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
 		0E52FCE91B17D17300279F48 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		0E52FCEA1B17D17300279F48 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		0E52FCEC1B17D18900279F48 /* Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
@@ -222,6 +237,7 @@
 			children = (
 				0EE320F41B0FF62D00EDA06F /* Tableview cells */,
 				0E1195B41B3A1312000F2B3D /* AddScenario header view */,
+				0E1195C51B3B72B3000F2B3D /* AddAction header view */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -277,8 +293,20 @@
 			children = (
 				0E1195B91B3A14CB000F2B3D /* AddItemCell.h */,
 				0E1195BA1B3A14CB000F2B3D /* AddItemCell.m */,
+				0E1195C21B3B714C000F2B3D /* AddActionCell.h */,
+				0E1195C31B3B714C000F2B3D /* AddActionCell.m */,
 			);
 			name = "Add Scenario";
+			sourceTree = "<group>";
+		};
+		0E1195C51B3B72B3000F2B3D /* AddAction header view */ = {
+			isa = PBXGroup;
+			children = (
+				0E1195C61B3B72D6000F2B3D /* AddActionHeaderView.h */,
+				0E1195C71B3B72D6000F2B3D /* AddActionHeaderView.m */,
+				0E1195C91B3B72EE000F2B3D /* AddActionHeaderView.xib */,
+			);
+			name = "AddAction header view";
 			sourceTree = "<group>";
 		};
 		0ED963A71B04ED6C00A58227 = {
@@ -324,6 +352,7 @@
 				0EE6C2AB1B08E0960005914E /* Default-h568.png */,
 				0ED963B41B04ED6C00A58227 /* Info.plist */,
 				0ED963B51B04ED6C00A58227 /* main.m */,
+				0E1195CF1B3B7D1F000F2B3D /* SugarMole-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,6 +421,8 @@
 				0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */,
 				0E1195B51B3A134C000F2B3D /* ItemDataModel.h */,
 				0E1195B61B3A134C000F2B3D /* ItemDataModel.m */,
+				0E1195CB1B3B7655000F2B3D /* AddActionDataModel.h */,
+				0E1195CC1B3B7655000F2B3D /* AddActionDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -421,6 +452,8 @@
 				0EE320F21B0FF62900EDA06F /* CompatibilitiesTableViewController.m */,
 				0EEE40951B363BE6006CE3FC /* AddScenarioViewController.h */,
 				0EEE40961B363BE6006CE3FC /* AddScenarioViewController.m */,
+				0E1195BF1B3B707F000F2B3D /* AddActionViewController.h */,
+				0E1195C01B3B707F000F2B3D /* AddActionViewController.m */,
 			);
 			name = Tableviews;
 			sourceTree = "<group>";
@@ -586,6 +619,7 @@
 				0EE6C2AC1B08E0960005914E /* Default-h568.png in Resources */,
 				0E1195AD1B3A01FA000F2B3D /* AddScenarioHeaderView.xib in Resources */,
 				0ED963BF1B04ED6C00A58227 /* Main.storyboard in Resources */,
+				0E1195CA1B3B72EE000F2B3D /* AddActionHeaderView.xib in Resources */,
 				0ED963C41B04ED6C00A58227 /* LaunchScreen.xib in Resources */,
 				0ED963C11B04ED6C00A58227 /* Images.xcassets in Resources */,
 			);
@@ -639,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */,
+				0E1195C41B3B714C000F2B3D /* AddActionCell.m in Sources */,
 				0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */,
 				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
 				0EDD73D31B1672E500BC3FFC /* Device.m in Sources */,
@@ -649,6 +684,7 @@
 				0EE320EA1B0FF58600EDA06F /* ItemsTableViewController.m in Sources */,
 				0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */,
 				0ED963EA1B04FAD500A58227 /* SettingsViewController.m in Sources */,
+				0E1195C81B3B72D6000F2B3D /* AddActionHeaderView.m in Sources */,
 				0EDD097C1B0772D20009F193 /* LoginViewController.m in Sources */,
 				0EE321001B0FF6F800EDA06F /* ScenarioItemCell.m in Sources */,
 				0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */,
@@ -679,11 +715,13 @@
 				0EE320E31B0FF4FC00EDA06F /* Action.m in Sources */,
 				0EE321121B0FF86A00EDA06F /* CaptorItemCell.m in Sources */,
 				0E11959C1B38C3F6000F2B3D /* SpacingTableViewCell.m in Sources */,
+				0E1195CD1B3B7655000F2B3D /* AddActionDataModel.m in Sources */,
 				0EE321191B0FF8EC00EDA06F /* AddCompatibilityCell.m in Sources */,
 				0E1195B01B3A12D9000F2B3D /* TriggerDataModel.m in Sources */,
 				0ED963DB1B04FA2D00A58227 /* HomeViewController.m in Sources */,
 				0EEE40971B363BE6006CE3FC /* AddScenarioViewController.m in Sources */,
 				0EE320F31B0FF62900EDA06F /* CompatibilitiesTableViewController.m in Sources */,
+				0E1195C11B3B707F000F2B3D /* AddActionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +849,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "SugarMole-PrefixHeader.pch";
 				INFOPLIST_FILE = "Sugar Mole/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -827,6 +866,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "SugarMole-PrefixHeader.pch";
 				INFOPLIST_FILE = "Sugar Mole/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

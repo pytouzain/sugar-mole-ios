@@ -9,16 +9,11 @@
 #import "AddScenarioViewController.h"
 #import "AddScenarioDataModel.h"
 
-#import "AddScenarioHeaderView.h"
-
 #import "SpacingTableViewCell.h"
 #import "AddItemCell.h"
 
 #define kTriggersHeaderViewTag  0
 #define kActionsHeaderViewTag   1
-
-#define kTriggersBarTitleColor  [UIColor colorWithRed:0.91 green:0.71 blue:0.19 alpha:1] /*#E7B531*/
-#define kActionsBarTitleColor   [UIColor colorWithRed:0.20 green:0.87 blue:0.65 alpha:1] /*#33DDA5*/
 
 @interface AddScenarioViewController ()
 
@@ -93,16 +88,28 @@
     
     if (section == 0) {
         headerView.title = @"TRIGGERS";
-        headerView.titleBarColor = kTriggersBarTitleColor;
+        headerView.titleBarColor = kSugarMoleColorYellow;
         headerView.headerViewTag = kTriggersHeaderViewTag;
     }
     else if (section == 1) {
         headerView.title = @"ACTIONS";
-        headerView.titleBarColor = kActionsBarTitleColor;
+        headerView.titleBarColor = kSugarMoleColorTurquoise;
         headerView.headerViewTag = kActionsHeaderViewTag;
     }
-    
+    headerView.delegate = self;
     return headerView;
+}
+
+#pragma mark -
+#pragma mark AddScenarioHeaderView Protocol method
+
+- (void)addButtonTouchedForTag:(NSUInteger)tag {
+    if (tag == kTriggersHeaderViewTag) {
+        [self performSegueWithIdentifier:@"AddTriggerSegueIdentifier" sender:nil];
+    }
+    else if (tag == kActionsHeaderViewTag) {
+        [self performSegueWithIdentifier:@"AddActionSegueIdentifier" sender:nil];
+    }
 }
 
 /*

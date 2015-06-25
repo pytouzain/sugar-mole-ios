@@ -11,4 +11,6 @@
 
 @interface ActionDataModel : ItemDataModel
 
+- (instancetype)initWithImage:(UIImage *)image descriptionItem:(NSString *)descriptionItem;
+
 @end

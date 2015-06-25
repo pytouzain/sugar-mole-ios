@@ -8,6 +8,8 @@
 
 #import "ItemsTableViewController.h"
 
-@interface AddScenarioViewController : ItemsTableViewController
+#import "AddScenarioHeaderView.h"
+
+@interface AddScenarioViewController : ItemsTableViewController <AddScenarioHeaderViewProtocol>
 
 @end

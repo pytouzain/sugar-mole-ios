@@ -10,4 +10,13 @@
 
 @implementation ActionDataModel
 
+- (instancetype)initWithImage:(UIImage *)image descriptionItem:(NSString *)descriptionItem {
+    self = [super init];
+    if (self) {
+        self.image = image;
+        self.descriptionItem = descriptionItem;
+    }
+    return self;
+}
+
 @end

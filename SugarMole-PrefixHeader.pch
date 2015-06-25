@@ -1,0 +1,15 @@
+//
+//  SugarMole-PrefixHeader.pch
+//  Sugar Mole
+//
+//  Created by Pierre-Yves Touzain on 25/06/2015.
+//  Copyright (c) 2015 Pierre-Yves Touzain. All rights reserved.
+//
+
+#ifndef Sugar_Mole_SugarMole_PrefixHeader_pch
+#define Sugar_Mole_SugarMole_PrefixHeader_pch
+
+#define kTriggersBarTitleColor  [UIColor colorWithRed:0.91 green:0.71 blue:0.19 alpha:1] /*#E7B531*/
+#define kActionsBarTitleColor   [UIColor colorWithRed:0.20 green:0.87 blue:0.65 alpha:1] /*#33DDA5*/
+
+#endif
