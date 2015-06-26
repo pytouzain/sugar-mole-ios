@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSString *descriptionItem;
 @property (nonatomic, strong) UIImage *image;
 
+@property (nonatomic, assign) BOOL isCellSelected;
+
 @end

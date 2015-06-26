@@ -17,6 +17,16 @@
 
 @implementation AddActionCell
 
+- (void)awakeFromNib {
+    //Cheat
+    _isCellSelected = YES;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    self.contentView.backgroundColor = _isCellSelected ? [UIColor lightGrayColor] : [UIColor whiteColor];
+    _isCellSelected = !_isCellSelected;
+}
+
 - (void)setDescriptionItem:(NSString *)descriptionItem {
     _descriptionLabel.text = descriptionItem;
 }
