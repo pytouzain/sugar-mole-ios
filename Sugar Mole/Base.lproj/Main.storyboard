@@ -258,19 +258,12 @@
                                 <color key="backgroundColor" red="0.0" green="0.61568627450000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="77" minValue="0.0" maxValue="144" id="mCx-7F-vMI">
-                                <rect key="frame" x="14" y="518" width="223" height="31"/>
+                                <rect key="frame" x="14" y="518" width="236" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="nbD-Ud-hGV" eventType="valueChanged" id="VIU-SU-0FL"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d3D-QW-cxN">
-                                <rect key="frame" x="284" y="522" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r50-gv-58r">
                                 <rect key="frame" x="274" y="10" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -435,11 +428,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.61568627450000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZNN-Ej-KbG">
-                                <rect key="frame" x="256" y="522" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d3D-QW-cxN">
+                                <rect key="frame" x="256" y="522" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -448,12 +441,12 @@
                     <navigationItem key="navigationItem" id="mId-n5-CbN"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="addButton" destination="r50-gv-58r" id="evx-my-AaJ"/>
                         <outlet property="equalButton" destination="RB5-Me-0cp" id="jlu-A7-GtW"/>
                         <outlet property="humidityButton" destination="xpo-jo-LaQ" id="Iir-Z2-FNK"/>
                         <outlet property="inferiorButton" destination="D9R-tP-5jr" id="ifY-Wf-dn5"/>
                         <outlet property="superiorButton" destination="FP3-uh-nwi" id="ezv-5c-QEw"/>
                         <outlet property="temperatureButton" destination="QSO-vB-xKI" id="T0W-VF-ESq"/>
-                        <outlet property="testLabel" destination="ZNN-Ej-KbG" id="u31-Fh-yK6"/>
                         <outlet property="timeButton" destination="HLh-Wz-MbN" id="FRi-6K-ZWa"/>
                         <outlet property="valueLabel" destination="d3D-QW-cxN" id="EKC-4E-Tmt"/>
                         <outlet property="valueSlider" destination="mCx-7F-vMI" id="dWv-3f-uza"/>
@@ -499,7 +492,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addActionIdentifier" rowHeight="50" id="zf2-Iq-OEU" customClass="AddActionCell">
-                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zf2-Iq-OEU" id="rTB-Aq-qVV">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -521,7 +514,7 @@
                                                     <rect key="frame" x="58" y="14" width="254" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -594,7 +587,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addItemIdentifier" rowHeight="50" id="FfL-YM-f7I" customClass="AddItemCell">
-                                        <rect key="frame" x="0.0" y="122" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="121.5" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FfL-YM-f7I" id="vnj-qg-dip">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -616,7 +609,7 @@
                                                     <rect key="frame" x="58" y="14" width="254" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>

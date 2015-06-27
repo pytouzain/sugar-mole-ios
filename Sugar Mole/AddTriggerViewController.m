@@ -18,16 +18,16 @@
 @property (weak, nonatomic) IBOutlet UIButton *equalButton;
 @property (weak, nonatomic) IBOutlet UIButton *superiorButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+
 @property (weak, nonatomic) IBOutlet UISlider *valueSlider;
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *testLabel;
 @end
 
 @implementation AddTriggerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (IBAction)backToHome:(id)sender {
@@ -36,16 +36,19 @@
 
 - (IBAction)triggerTypeButtonTouched:(UIButton *)sender {
     if (sender == _temperatureButton) {
+        [self adaptToTemperature];
         [self changeState:!_temperatureButton.tag forButton:_temperatureButton];
         [self changeState:NO forButton:_timeButton];
         [self changeState:NO forButton:_humidityButton];
     }
     else if (sender == _timeButton) {
+        [self adaptToTime];
         [self changeState:NO forButton:_temperatureButton];
         [self changeState:!_timeButton.tag forButton:_timeButton];
         [self changeState:NO forButton:_humidityButton];
     }
     else if (sender == _humidityButton) {
+        [self adaptToHumidity];
         [self changeState:NO forButton:_temperatureButton];
         [self changeState:NO forButton:_timeButton];
         [self changeState:!_humidityButton.tag forButton:_humidityButton];
@@ -71,12 +74,22 @@
 }
 
 - (IBAction)sliderValueChanged:(UISlider *)sender {
-    int value = sender.value;
+    if (_temperatureButton.tag) {
+        _valueLabel.text = [NSString stringWithFormat:@"%d°C", (int)_valueSlider.value];
+    }
+    else if (_timeButton.tag) {
+        _valueLabel.text = [self transformValueToTime:sender.value];
+    }
+    else if (_humidityButton.tag) {
+        _valueLabel.text = [NSString stringWithFormat:@"%02d%%", (int)_valueSlider.value];
+    }
+}
+
+- (NSString *)transformValueToTime:(int)value {
     int hours = value / 6;
     int minutes = hours > 0 ? (value % (hours * 6)) * 10 : value * 10;
     
-    _testLabel.text = [NSString stringWithFormat:@"%d", hours];
-    _valueLabel.text = [NSString stringWithFormat:@"%d", minutes];
+    return [NSString stringWithFormat:@"%02d : %02d", hours, minutes];
 }
 
 - (void)changeState:(BOOL)state forButton:(UIButton *)button {
@@ -85,15 +98,51 @@
 }
 
 - (void)adaptToTemperature {
+    CGRect sliderFrame = _valueSlider.frame;
+    sliderFrame.size.width = 236;
+    _valueSlider.frame = sliderFrame;
     
+    CGRect labelFrame = _valueLabel.frame;
+    labelFrame.size.width = 48;
+    labelFrame.origin.x = _valueSlider.frame.origin.x + _valueSlider.frame.size.width + 8;
+    _valueLabel.frame = labelFrame;
+    
+    _valueSlider.minimumValue = -40;
+    _valueSlider.maximumValue = 60;
+    _valueSlider.value = 20;
+    _valueLabel.text = [NSString stringWithFormat:@"%d°C", (int)_valueSlider.value];
 }
 
 - (void)adaptToTime {
+    CGRect sliderFrame = _valueSlider.frame;
+    sliderFrame.size.width = 224;
+    _valueSlider.frame = sliderFrame;
     
+    CGRect labelFrame = _valueLabel.frame;
+    labelFrame.size.width = 60;
+    labelFrame.origin.x = _valueSlider.frame.origin.x + _valueSlider.frame.size.width + 8;
+    _valueLabel.frame = labelFrame;
+    
+    _valueSlider.minimumValue = 0;
+    _valueSlider.maximumValue = 144;
+    _valueSlider.value = 72;
+    _valueLabel.text = [self transformValueToTime:_valueSlider.value];
 }
 
 - (void)adaptToHumidity {
+    CGRect sliderFrame = _valueSlider.frame;
+    sliderFrame.size.width = 236;
+    _valueSlider.frame = sliderFrame;
     
+    CGRect labelFrame = _valueLabel.frame;
+    labelFrame.size.width = 40;
+    labelFrame.origin.x = _valueSlider.frame.origin.x + _valueSlider.frame.size.width + 8;
+    _valueLabel.frame = labelFrame;
+    
+    _valueSlider.minimumValue = 0;
+    _valueSlider.maximumValue = 100;
+    _valueSlider.value = 50;
+    _valueLabel.text = [NSString stringWithFormat:@"%02d%%", (int)_valueSlider.value];
 }
 
 /*
