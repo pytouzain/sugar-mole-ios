@@ -21,7 +21,7 @@
                     </navigationBar>
                     <connections>
                         <outlet property="delegate" destination="zUV-Us-hUl" id="7ja-4X-mIy"/>
-                        <segue destination="DHT-oL-Ouu" kind="relationship" relationship="rootViewController" id="Pxu-n1-Li8"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HaG-bs-adA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vd-Jj-Yqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,6 +70,9 @@
                                 <state key="normal" image="Microphone-100">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="vocalControlButtonTouched:" destination="lYg-8b-FRE" eventType="touchUpInside" id="fFH-km-qhO"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_white_down" id="IC0-vl-9NX">
                                 <rect key="frame" x="280" y="13" width="24" height="24"/>
@@ -516,9 +519,9 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.0" green="0.61568627450000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MRG-Qu-edc">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="MRG-Qu-edc">
                                                     <rect key="frame" x="58" y="14" width="254" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1032,7 +1035,7 @@
                                         <rect key="frame" x="62" y="326" width="250" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="Gut-18-t2V"/>
                                         </connections>
@@ -1050,7 +1053,7 @@
                                         <rect key="frame" x="62" y="377" width="250" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="LeM-Rr-axk"/>
                                         </connections>
@@ -1159,7 +1162,7 @@
                                 <rect key="frame" x="62" y="262" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="ToP-6e-oOC" id="7IX-Ho-6XV"/>
                                 </connections>
