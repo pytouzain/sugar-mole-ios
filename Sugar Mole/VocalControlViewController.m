@@ -25,6 +25,10 @@
     _vocalControlButton.layer.borderWidth = 8.f;
 }
 
+- (IBAction)vocalControlButtonTouched:(id)sender {
+    _instructionLabel.text = @"Listening...";
+}
+
 - (IBAction)backToHomeView:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
