@@ -67,11 +67,7 @@
     
     ScenarioDataModel *scenarioModel = [self.model.scenarios objectAtIndex:INDEX_OF_ROW(indexPath.row)];
     
-    
-    CGRect labelRect = [scenarioModel.scenarioDescription boundingRectWithSize:CGSizeMake(197, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil];
-    
-    NSLog(@"Width : %f", labelRect.size.width);
-    NSLog(@"Height : %f", ceil(labelRect.size.height));
+    CGRect labelRect = [scenarioModel.scenarioDescription boundingRectWithSize:CGSizeMake(200, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil];
     
     return ceil(labelRect.size.height) + 16;
 }
