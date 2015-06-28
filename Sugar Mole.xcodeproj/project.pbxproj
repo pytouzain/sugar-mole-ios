@@ -24,6 +24,7 @@
 		0E52FCEB1B17D17300279F48 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCEA1B17D17300279F48 /* Data.m */; };
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED2A8CC1B3F9E6200C6C5CB /* ScenarioDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2A8CB1B3F9E6200C6C5CB /* ScenarioDataModel.m */; };
+		0ED2A8CF1B4050E700C6C5CB /* ScenariosDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2A8CE1B4050E700C6C5CB /* ScenariosDataModel.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
 		0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B81B04ED6C00A58227 /* AppDelegate.m */; };
 		0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* RegisterViewController.m */; };
@@ -112,6 +113,8 @@
 		0E52FCED1B17D18900279F48 /* Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Description.m; sourceTree = "<group>"; };
 		0ED2A8CA1B3F9E6200C6C5CB /* ScenarioDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenarioDataModel.h; sourceTree = "<group>"; };
 		0ED2A8CB1B3F9E6200C6C5CB /* ScenarioDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenarioDataModel.m; sourceTree = "<group>"; };
+		0ED2A8CD1B4050E700C6C5CB /* ScenariosDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenariosDataModel.h; sourceTree = "<group>"; };
+		0ED2A8CE1B4050E700C6C5CB /* ScenariosDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenariosDataModel.m; sourceTree = "<group>"; };
 		0ED963B01B04ED6C00A58227 /* Sugar Mole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sugar Mole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED963B41B04ED6C00A58227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED963B51B04ED6C00A58227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -416,8 +419,12 @@
 			isa = PBXGroup;
 			children = (
 				0E11959D1B38C7E6000F2B3D /* Realm models */,
+				0ED2A8CD1B4050E700C6C5CB /* ScenariosDataModel.h */,
+				0ED2A8CE1B4050E700C6C5CB /* ScenariosDataModel.m */,
 				0E1195A31B38CA65000F2B3D /* AddScenarioDataModel.h */,
 				0E1195A41B38CA65000F2B3D /* AddScenarioDataModel.m */,
+				0E1195CB1B3B7655000F2B3D /* AddActionDataModel.h */,
+				0E1195CC1B3B7655000F2B3D /* AddActionDataModel.m */,
 				0E1195B51B3A134C000F2B3D /* ItemDataModel.h */,
 				0E1195B61B3A134C000F2B3D /* ItemDataModel.m */,
 				0E1195AE1B3A12D9000F2B3D /* TriggerDataModel.h */,
@@ -426,8 +433,6 @@
 				0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */,
 				0ED2A8CA1B3F9E6200C6C5CB /* ScenarioDataModel.h */,
 				0ED2A8CB1B3F9E6200C6C5CB /* ScenarioDataModel.m */,
-				0E1195CB1B3B7655000F2B3D /* AddActionDataModel.h */,
-				0E1195CC1B3B7655000F2B3D /* AddActionDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -702,6 +707,7 @@
 				0EE321161B0FF8C500EDA06F /* CompatibleCell.m in Sources */,
 				0E1195AB1B3A01DA000F2B3D /* AddScenarioHeaderView.m in Sources */,
 				0E52FCEB1B17D17300279F48 /* Data.m in Sources */,
+				0ED2A8CF1B4050E700C6C5CB /* ScenariosDataModel.m in Sources */,
 				0EE320F01B0FF5F800EDA06F /* ActionsTypeTableViewController.m in Sources */,
 				0ED963B61B04ED6C00A58227 /* main.m in Sources */,
 				0EE3210F1B0FF84400EDA06F /* HeaterItemCell.m in Sources */,

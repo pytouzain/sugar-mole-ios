@@ -7,6 +7,7 @@
 //
 
 #import "ItemsTableViewController.h"
+#import "ScenariosTableViewController.h"
 
 #import "AddScenarioHeaderView.h"
 
@@ -18,5 +19,7 @@
 @end
 
 @interface AddScenarioViewController : ItemsTableViewController <AddScenarioHeaderViewProtocol, AddItemProtocol>
+
+@property (nonatomic, strong) id<ScenariosListProtocol> delegate;
 
 @end

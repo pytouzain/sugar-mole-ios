@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ScenarioDataModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSString *scenarioDescription;
 @property (nonatomic, strong) NSArray *triggers;
 @property (nonatomic, strong) NSArray *actions;

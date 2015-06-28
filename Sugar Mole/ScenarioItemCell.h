@@ -10,6 +10,7 @@
 
 @interface ScenarioItemCell : BaseItemCell
 
-- (void)configureCellForIndex:(NSUInteger)index;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSString *scenarioDescription;
 
 @end

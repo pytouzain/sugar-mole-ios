@@ -12,6 +12,7 @@
 #import "AddTriggerViewController.h"
 #import "AddActionViewController.h"
 
+#import "ScenarioDataModel.h"
 #import "TriggerDataModel.h"
 #import "ActionDataModel.h"
 
@@ -22,6 +23,8 @@
 #define kActionsHeaderViewTag   1
 
 @interface AddScenarioViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *scenarioNamingTextField;
 
 @property (nonatomic, strong) AddScenarioDataModel *model;
 
@@ -45,6 +48,19 @@
 
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)addButtonTouched:(id)sender {
+    if ([self.model.triggers count] > 0 && [self.model.actions count] > 0) {
+        if (_delegate && [_delegate respondsToSelector:@selector(addScenario:)]) {
+            ScenarioDataModel *scenarioModel = [[ScenarioDataModel alloc] init];
+            scenarioModel.triggers = self.model.triggers;
+            scenarioModel.actions = self.model.actions;
+            scenarioModel.name = self.scenarioNamingTextField.text;
+            [_delegate addScenario:scenarioModel];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }
 }
 
 #pragma mark - Table view data source

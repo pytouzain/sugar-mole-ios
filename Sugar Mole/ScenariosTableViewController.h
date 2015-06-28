@@ -7,13 +7,14 @@
 //
 
 #import "ItemsTableViewController.h"
+#import "ScenarioDataModel.h"
 
-@protocol ScenarioListProtocol <NSObject>
+@protocol ScenariosListProtocol <NSObject>
 
-- (void)addScenario;
+- (void)addScenario:(ScenarioDataModel *)scenario;
 
 @end
 
-@interface ScenariosTableViewController : ItemsTableViewController
+@interface ScenariosTableViewController : ItemsTableViewController <ScenariosListProtocol>
 
 @end
