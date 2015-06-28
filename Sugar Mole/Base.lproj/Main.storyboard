@@ -120,7 +120,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scenarioCellIdentifier" rowHeight="75" id="EjC-l8-gtW" customClass="ScenarioItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="scenarioCellIdentifier" rowHeight="75" id="EjC-l8-gtW" customClass="ScenarioItemCell">
                                         <rect key="frame" x="0.0" y="92" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EjC-l8-gtW" id="rHC-oT-BHM">
@@ -271,6 +271,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButtonTouched:" destination="nbD-Ud-hGV" eventType="touchUpInside" id="xMh-2j-HjW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xpo-jo-LaQ">
                                 <rect key="frame" x="16" y="202" width="288" height="50"/>
@@ -485,6 +488,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButtonTouched:" destination="ubu-tj-A7X" eventType="touchUpInside" id="HxH-6A-qBq"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsMultipleSelection="YES" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="50" sectionHeaderHeight="10" sectionFooterHeight="10" id="DOL-Dm-EvG">
                                 <rect key="frame" x="0.0" y="50" width="320" height="518"/>
@@ -492,7 +498,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addActionIdentifier" rowHeight="50" id="zf2-Iq-OEU" customClass="AddActionCell">
-                                        <rect key="frame" x="0.0" y="49.5" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zf2-Iq-OEU" id="rTB-Aq-qVV">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -586,8 +592,8 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addItemIdentifier" rowHeight="50" id="FfL-YM-f7I" customClass="AddItemCell">
-                                        <rect key="frame" x="0.0" y="121.5" width="320" height="50"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addItemIdentifier" rowHeight="50" id="FfL-YM-f7I" customClass="AddItemCell">
+                                        <rect key="frame" x="0.0" y="122" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FfL-YM-f7I" id="vnj-qg-dip">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -682,7 +688,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="compatibleCellIdentifier" rowHeight="50" id="6zI-TN-C3e" customClass="CompatibleCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="compatibleCellIdentifier" rowHeight="50" id="6zI-TN-C3e" customClass="CompatibleCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6zI-TN-C3e" id="EJM-8d-3do">
@@ -712,7 +718,7 @@
                                             <outlet property="versionLabel" destination="gTw-gO-vHC" id="d1z-Gv-tN2"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCompatibilityCellIdentifier" rowHeight="50" id="bXN-kb-26B" customClass="AddCompatibilityCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addCompatibilityCellIdentifier" rowHeight="50" id="bXN-kb-26B" customClass="AddCompatibilityCell">
                                         <rect key="frame" x="0.0" y="72" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXN-kb-26B" id="QS5-GH-PZU">
@@ -1385,7 +1391,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lightCellIdentifier" rowHeight="75" id="wCM-N8-fpX" customClass="LightItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lightCellIdentifier" rowHeight="75" id="wCM-N8-fpX" customClass="LightItemCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wCM-N8-fpX" id="Aum-DL-sjR">
@@ -1429,7 +1435,7 @@
                                             <outlet property="descriptionLabel" destination="1tf-bp-P89" id="K74-BF-V10"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="plugCellIdentifier" rowHeight="75" id="dvK-3k-1ZL" customClass="PlugItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="plugCellIdentifier" rowHeight="75" id="dvK-3k-1ZL" customClass="PlugItemCell">
                                         <rect key="frame" x="0.0" y="97" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dvK-3k-1ZL" id="bo4-gW-GgF">
@@ -1464,7 +1470,7 @@
                                             <outlet property="descriptionLabel" destination="XJ7-o8-Fzz" id="nia-tC-kZr"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="securityCellIdentifier" rowHeight="75" id="q0V-V1-E8l" customClass="SecurityItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="securityCellIdentifier" rowHeight="75" id="q0V-V1-E8l" customClass="SecurityItemCell">
                                         <rect key="frame" x="0.0" y="172" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q0V-V1-E8l" id="EBI-EY-7cT">
@@ -1499,7 +1505,7 @@
                                             <outlet property="descriptionLabel" destination="ewm-Jw-hg9" id="bZj-G1-hPl"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="heaterCellIdentifier" rowHeight="75" id="l2O-J1-rTC" customClass="HeaterItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="heaterCellIdentifier" rowHeight="75" id="l2O-J1-rTC" customClass="HeaterItemCell">
                                         <rect key="frame" x="0.0" y="247" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l2O-J1-rTC" id="ANx-hQ-DPN">
@@ -1543,7 +1549,7 @@
                                             <outlet property="descriptionLabel" destination="0rY-HH-rA1" id="B4x-F0-443"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACCellIdentifier" rowHeight="75" id="SPH-6x-2Oe" customClass="ACItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACCellIdentifier" rowHeight="75" id="SPH-6x-2Oe" customClass="ACItemCell">
                                         <rect key="frame" x="0.0" y="322" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SPH-6x-2Oe" id="JJy-lg-amw">
@@ -1587,7 +1593,7 @@
                                             <outlet property="descriptionLabel" destination="HEJ-2L-d1v" id="jM3-c9-90J"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="captorCellIdentifier" rowHeight="75" id="ag6-a1-p1O" customClass="CaptorItemCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="captorCellIdentifier" rowHeight="75" id="ag6-a1-p1O" customClass="CaptorItemCell">
                                         <rect key="frame" x="0.0" y="397" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ag6-a1-p1O" id="8Mz-bg-cBL">

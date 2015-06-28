@@ -85,6 +85,39 @@
     }
 }
 
+- (IBAction)addButtonTouched:(id)sender {
+    if ((_temperatureButton.tag || _timeButton.tag || _humidityButton.tag)
+        && (_inferiorButton.tag || _equalButton.tag || _superiorButton.tag)) {
+        TriggerType type = 0;
+        DetailTrigger detail = 0;
+        
+        if (_temperatureButton.tag) {
+            type = TriggerTypeTemperature;
+        }
+        else if (_timeButton.tag) {
+            type = TriggerTypeTime;
+        }
+        else if (_humidityButton.tag) {
+            type = TriggerTypeHumidity;
+        }
+        
+        if (_inferiorButton.tag) {
+            detail = DetailTriggerInferior;
+        }
+        else if (_equalButton.tag) {
+            detail = DetailTriggerEqual;
+        }
+        else if (_superiorButton.tag) {
+            detail = DetailTriggerSuperior;
+        }
+        
+        if (_delegate && [_delegate respondsToSelector:@selector(addTriggerWithType:detail:value:)]) {
+            [_delegate addTriggerWithType:type detail:detail value:_valueSlider.value];
+        }
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 - (NSString *)transformValueToTime:(int)value {
     int hours = value / 6;
     int minutes = hours > 0 ? (value % (hours * 6)) * 10 : value * 10;

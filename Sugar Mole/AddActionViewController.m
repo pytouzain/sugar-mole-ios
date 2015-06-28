@@ -19,6 +19,7 @@
 @interface AddActionViewController ()
 
 @property (nonatomic, strong) AddActionDataModel *model;
+@property (nonatomic, strong) NSMutableArray *selectedActions;
 
 @end
 
@@ -29,6 +30,7 @@
     if (self) {
         self.model = [[AddActionDataModel alloc] init];
         self.cellIdentifier = @"addActionIdentifier";
+        self.selectedActions = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -39,6 +41,13 @@
 }
 
 - (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)addButtonTouched:(id)sender {
+    if (_delegate && [_delegate respondsToSelector:@selector(addActionsFromArray:)]) {
+        [_delegate addActionsFromArray:self.selectedActions];
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -70,6 +79,16 @@
     cell.descriptionItem = actionModel.descriptionItem;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ActionDataModel *actionModel = [[self.model.actions objectForKey:[self.model.sections objectAtIndex:indexPath.section]] objectAtIndex:INDEX_OF_ROW(indexPath.row)];
+    [_selectedActions addObject:actionModel];
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ActionDataModel *actionModel = [[self.model.actions objectForKey:[self.model.sections objectAtIndex:indexPath.section]] objectAtIndex:INDEX_OF_ROW(indexPath.row)];
+    [_selectedActions removeObject:actionModel];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

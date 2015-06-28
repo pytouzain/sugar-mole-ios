@@ -16,4 +16,6 @@
 @property (nonatomic, strong) NSString *cellIdentifier;
 @property (nonatomic, strong) NSArray *dataSource;
 
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
 @end

@@ -13,7 +13,6 @@
 
 @interface ItemsTableViewController ()
 
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 

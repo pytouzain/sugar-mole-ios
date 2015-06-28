@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AddScenarioViewController.h"
+#import "AddScenarioDataModel.h"
+
 @interface AddTriggerViewController : UIViewController
+
+@property (nonatomic, assign) id<AddItemProtocol> delegate;
 
 @end

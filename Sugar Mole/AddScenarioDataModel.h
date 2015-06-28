@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSMutableArray *actions;
 
 - (NSUInteger)count;
+- (void)createTriggerForType:(TriggerType)type detail:(DetailTrigger)detail value:(int)value;
 
 @end

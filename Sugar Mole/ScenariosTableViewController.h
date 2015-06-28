@@ -8,6 +8,12 @@
 
 #import "ItemsTableViewController.h"
 
+@protocol ScenarioListProtocol <NSObject>
+
+- (void)addScenario;
+
+@end
+
 @interface ScenariosTableViewController : ItemsTableViewController
 
 @end

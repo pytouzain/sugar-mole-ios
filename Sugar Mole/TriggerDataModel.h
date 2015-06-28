@@ -11,4 +11,8 @@
 
 @interface TriggerDataModel : ItemDataModel
 
+@property (nonatomic, assign) TriggerType type;
+@property (nonatomic, assign) DetailTrigger detail;
+@property (nonatomic, assign) int value;
+
 @end

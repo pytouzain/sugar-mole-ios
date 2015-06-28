@@ -7,7 +7,10 @@
 //
 
 #import "ItemsTableViewController.h"
+#import "AddScenarioViewController.h"
 
 @interface AddActionViewController : ItemsTableViewController
+
+@property (nonatomic, assign) id<AddItemProtocol> delegate;
 
 @end

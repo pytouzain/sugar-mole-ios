@@ -10,6 +10,13 @@
 
 #import "AddScenarioHeaderView.h"
 
-@interface AddScenarioViewController : ItemsTableViewController <AddScenarioHeaderViewProtocol>
+@protocol AddItemProtocol <NSObject>
+
+- (void)addTriggerWithType:(TriggerType)type detail:(DetailTrigger)detail value:(int)value;
+- (void)addActionsFromArray:(NSArray *)actions;
+
+@end
+
+@interface AddScenarioViewController : ItemsTableViewController <AddScenarioHeaderViewProtocol, AddItemProtocol>
 
 @end

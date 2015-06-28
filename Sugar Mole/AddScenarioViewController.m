@@ -9,6 +9,12 @@
 #import "AddScenarioViewController.h"
 #import "AddScenarioDataModel.h"
 
+#import "AddTriggerViewController.h"
+#import "AddActionViewController.h"
+
+#import "TriggerDataModel.h"
+#import "ActionDataModel.h"
+
 #import "SpacingTableViewCell.h"
 #import "AddItemCell.h"
 
@@ -66,6 +72,18 @@
     
     AddItemCell *cell = (AddItemCell *)[tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
     
+    if (indexPath.section == 0) {
+        TriggerDataModel *triggerModel = [self.model.triggers objectAtIndex:INDEX_OF_ROW(indexPath.row)];
+    
+        cell.descriptionItem = triggerModel.descriptionItem;
+        cell.image = triggerModel.image;
+    }
+    else {
+        ActionDataModel *actionModel = [self.model.actions objectAtIndex:INDEX_OF_ROW(indexPath.row)];
+        cell.descriptionItem = actionModel.descriptionItem;
+        cell.image = actionModel.image;
+    }
+    
     //[cell configureCellForIndex:INDEX_OF_ROW(indexPath.row)];
     return cell;
 }
@@ -100,6 +118,7 @@
     return headerView;
 }
 
+
 #pragma mark -
 #pragma mark AddScenarioHeaderView Protocol method
 
@@ -112,14 +131,33 @@
     }
 }
 
-/*
+#pragma mark -
+#pragma mark AddItem Protocol method
+
+- (void)addTriggerWithType:(TriggerType)type detail:(DetailTrigger)detail value:(int)value {
+    [self.model createTriggerForType:type detail:detail value:value];
+    [self.tableView reloadData];
+}
+
+- (void)addActionsFromArray:(NSArray *)actions {
+    [self.model.actions addObjectsFromArray:actions];
+    [self.tableView reloadData];
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"AddTriggerSegueIdentifier"]) {
+        AddTriggerViewController *tvc = (AddTriggerViewController *)[segue destinationViewController];
+        tvc.delegate = self;
+    }
+    else if ([[segue identifier] isEqualToString:@"AddActionSegueIdentifier"]) {
+        AddActionViewController *avc = (AddActionViewController *)[segue destinationViewController];
+        avc.delegate = self;
+    }
 }
-*/
+
 
 @end

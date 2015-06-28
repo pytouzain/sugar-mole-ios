@@ -19,11 +19,12 @@
 
 - (void)awakeFromNib {
     //Cheat
-    _isCellSelected = YES;
+    _isCellSelected = NO;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    self.contentView.backgroundColor = _isCellSelected ? [UIColor lightGrayColor] : [UIColor whiteColor];
+    [super setSelected:selected animated:animated];
+    self.contentView.backgroundColor = selected ? [UIColor lightGrayColor] : [UIColor whiteColor];
     _isCellSelected = !_isCellSelected;
 }
 
