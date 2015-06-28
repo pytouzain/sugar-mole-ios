@@ -25,6 +25,8 @@
 		0E52FCEE1B17D18900279F48 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E52FCED1B17D18900279F48 /* Description.m */; };
 		0ED2A8CC1B3F9E6200C6C5CB /* ScenarioDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2A8CB1B3F9E6200C6C5CB /* ScenarioDataModel.m */; };
 		0ED2A8CF1B4050E700C6C5CB /* ScenariosDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2A8CE1B4050E700C6C5CB /* ScenariosDataModel.m */; };
+		0ED2A8D21B40AACA00C6C5CB /* ActionsTypeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2A8D11B40AACA00C6C5CB /* ActionsTypeDataModel.m */; };
+		0ED2A8D51B40AD7700C6C5CB /* ActionTypeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2A8D41B40AD7700C6C5CB /* ActionTypeDataModel.m */; };
 		0ED963B61B04ED6C00A58227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B51B04ED6C00A58227 /* main.m */; };
 		0ED963B91B04ED6C00A58227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963B81B04ED6C00A58227 /* AppDelegate.m */; };
 		0ED963BC1B04ED6C00A58227 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED963BB1B04ED6C00A58227 /* RegisterViewController.m */; };
@@ -115,6 +117,10 @@
 		0ED2A8CB1B3F9E6200C6C5CB /* ScenarioDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenarioDataModel.m; sourceTree = "<group>"; };
 		0ED2A8CD1B4050E700C6C5CB /* ScenariosDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenariosDataModel.h; sourceTree = "<group>"; };
 		0ED2A8CE1B4050E700C6C5CB /* ScenariosDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenariosDataModel.m; sourceTree = "<group>"; };
+		0ED2A8D01B40AACA00C6C5CB /* ActionsTypeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsTypeDataModel.h; sourceTree = "<group>"; };
+		0ED2A8D11B40AACA00C6C5CB /* ActionsTypeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsTypeDataModel.m; sourceTree = "<group>"; };
+		0ED2A8D31B40AD7700C6C5CB /* ActionTypeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTypeDataModel.h; sourceTree = "<group>"; };
+		0ED2A8D41B40AD7700C6C5CB /* ActionTypeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTypeDataModel.m; sourceTree = "<group>"; };
 		0ED963B01B04ED6C00A58227 /* Sugar Mole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sugar Mole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED963B41B04ED6C00A58227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED963B51B04ED6C00A58227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -433,6 +439,10 @@
 				0E1195B21B3A12E8000F2B3D /* ActionDataModel.m */,
 				0ED2A8CA1B3F9E6200C6C5CB /* ScenarioDataModel.h */,
 				0ED2A8CB1B3F9E6200C6C5CB /* ScenarioDataModel.m */,
+				0ED2A8D01B40AACA00C6C5CB /* ActionsTypeDataModel.h */,
+				0ED2A8D11B40AACA00C6C5CB /* ActionsTypeDataModel.m */,
+				0ED2A8D31B40AD7700C6C5CB /* ActionTypeDataModel.h */,
+				0ED2A8D41B40AD7700C6C5CB /* ActionTypeDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -685,6 +695,7 @@
 				0EDD51021B0D3A1D00E18B42 /* NavigationControllerDelegate.m in Sources */,
 				0E1195C41B3B714C000F2B3D /* AddActionCell.m in Sources */,
 				0EE320DA1B0FF17900EDA06F /* DataManager.m in Sources */,
+				0ED2A8D51B40AD7700C6C5CB /* ActionTypeDataModel.m in Sources */,
 				0EE320DD1B0FF18B00EDA06F /* RequestHandler.m in Sources */,
 				0EDD73D31B1672E500BC3FFC /* Device.m in Sources */,
 				0E52FCEE1B17D18900279F48 /* Description.m in Sources */,
@@ -718,6 +729,7 @@
 				0EE303FD1B114D9600D0659F /* VocalControlViewController.m in Sources */,
 				0EE321031B0FF73600EDA06F /* LightItemCell.m in Sources */,
 				0EE320E61B0FF50800EDA06F /* User.m in Sources */,
+				0ED2A8D21B40AACA00C6C5CB /* ActionsTypeDataModel.m in Sources */,
 				0EE3210C1B0FF82D00EDA06F /* SecurityItemCell.m in Sources */,
 				0EE321091B0FF81F00EDA06F /* ACItemCell.m in Sources */,
 				0EED47AE1B1532C500BF0934 /* NSString+MD5.m in Sources */,

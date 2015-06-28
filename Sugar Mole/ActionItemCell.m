@@ -10,4 +10,13 @@
 
 @implementation ActionItemCell
 
+- (IBAction)sliderValueChanged:(UISlider *)sender {
+    _valueLabel.text = [NSString stringWithFormat:@"%02d%%", (int)sender.value];
+}
+
+- (void)setSliderValue:(NSUInteger)value {
+    [_valueSlider setValue:value];
+    _valueLabel.text = [NSString stringWithFormat:@"%02d%%", (int)_valueSlider.value];
+}
+
 @end

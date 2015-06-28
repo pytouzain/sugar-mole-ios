@@ -13,4 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *actionStateImage;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
+@property (weak, nonatomic) IBOutlet UISlider *valueSlider;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+
+- (void)setSliderValue:(NSUInteger)value;
+
 @end
